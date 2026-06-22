@@ -1,30 +1,41 @@
 # Law & Data — Study Resources
 
-Study material for the **Law & Data Science** course (Master's in Data Science).
-Covers EU and international data law: treaties, the GDPR, the 2020 Data Strategy
+Study material for the **Law & Data Science** course (Master's in Data Science),
+covering EU and international data law: treaties, the GDPR, the 2020 Data Strategy
 package, fundamental rights, and leading case law.
 
-## Practice quiz
+## ▶ [Take the quiz](https://law-and-data-quiz.netlify.app)
 
-An interactive multiple-choice quiz built from the closed questions:
-
-## [▶ Take the quiz](https://law-and-data-quiz.netlify.app)
+Interactive multiple-choice quiz built from the closed exam questions — weighted
+scoring, answer review, shuffling, and a dark/light theme. No install needed.
 
 ## What's in here
 
-| File                                           | Contents                                                                                                                                                                                                                                                                       |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [`summary.pdf`](summary.pdf)                   | Concept-dense summary of the whole course. Every closed and open exam question can be answered from it; each legal instrument is used and explained in context.                                                                                                                |
-| [`laws.pdf`](laws.pdf)                         | Reference catalogue of every legal instrument cited in the course — international instruments, Council of Europe conventions, EU primary law (treaties + Charter), EU secondary law, the 2020 Data Strategy package, and leading case law. Articles (loci) and dates included. |
-| [`closed_questions.pdf`](closed_questions.pdf) | Closed (multiple-choice) questions **with answers**. Correct answers are bold and check-marked; some have more than one correct answer. Same questions power the quiz above.                                                                                                   |
-| [`open_questions.pdf`](open_questions.pdf)     | Collection of open-ended exam questions (short essay / discussion format).                                                                                                                                                                                                     |
+| File                                           | Contents                                                                                                                                                              |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`summary.pdf`](summary.pdf)                   | Concept-dense summary of the whole course. Enough to answer every exam question; each legal instrument explained in context.                                           |
+| [`laws.pdf`](laws.pdf)                         | Reference catalogue of every legal instrument cited — international, Council of Europe, EU primary law (treaties + Charter), EU secondary law, the 2020 Data Strategy package, and case law, with articles and dates. |
+| [`closed_questions.pdf`](closed_questions.pdf) | Multiple-choice questions **with answers** (correct ones bold and check-marked; some have several). Same set powers the quiz.                                          |
+| [`open_questions.pdf`](open_questions.pdf)     | Open-ended exam questions, short-essay / discussion format.                                                                                                            |
 
 ## How to use them
 
-1. Read `summary.pdf` to learn the material.
-2. Keep `laws.pdf` open as a lookup for exact instruments, articles, and dates.
+1. Learn the material from `summary.pdf`.
+2. Keep `laws.pdf` open to look up exact instruments, articles, and dates.
 3. Drill with the [quiz](https://law-and-data-quiz.netlify.app) or `closed_questions.pdf`.
 4. Practice writing with `open_questions.pdf`.
+
+## Running the quiz locally
+
+```bash
+cd law-quiz
+npm install
+npm run dev      # dev server
+npm test         # run tests
+npm run build    # production build
+```
+
+Built with React + Vite, deployed on Netlify.
 
 ## Authors
 
