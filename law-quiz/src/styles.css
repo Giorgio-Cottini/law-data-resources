@@ -171,6 +171,8 @@ tbody tr:hover { background: var(--surface); }
   border-radius: 16px;
   padding: 40px 32px 28px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  position: relative;
+  z-index: 5; /* card sits above the bouncing logo */
 }
 
 .start-card h1 { font-size: 1.7rem; margin: 18px 0 2px; }
@@ -241,8 +243,147 @@ tbody tr:hover { background: var(--surface); }
   display: flex;
   justify-content: space-between;
   padding: 16px 20px;
+  z-index: 5; /* above the bouncing logo so buttons stay clickable */
 }
 
 .stats { display: flex; gap: 16px; flex-wrap: wrap; margin: 12px 0; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; }
 .stat b { display: block; font-size: 1.4rem; }
+
+/* ---- GitHub bounce / explosion / marquee background ---- */
+.gb-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1; /* bouncing logo passes BEHIND the card/topbar */
+}
+.gb-overlay.gb-booming { z-index: 60; } /* explosion jumps to front */
+
+.gb-logo {
+  position: fixed;
+  top: 0; left: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+  will-change: transform;
+  box-shadow: 0 0 0 2px var(--bg), 0 0 14px rgba(0, 0, 0, 0.35);
+  transition: filter 0.2s, box-shadow 0.2s;
+}
+.gb-logo:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 0 0 2px var(--bg), 0 0 22px var(--accent);
+}
+.gb-logo img {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  user-select: none;
+}
+
+/* shockwave rings */
+.gb-shock {
+  position: fixed;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  transform: translate(-50%, -50%) scale(0.2);
+  pointer-events: none;
+  animation: gb-shock 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.gb-shock2 {
+  border-color: #32e6e2;
+  animation-delay: 0.1s;
+}
+@keyframes gb-shock {
+  0%   { opacity: 0.9; transform: translate(-50%, -50%) scale(0.2); }
+  100% { opacity: 0;   transform: translate(-50%, -50%) scale(46); }
+}
+
+/* RGB-split glitch flash */
+.gb-glitch {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: gb-glitch 0.75s steps(1, end) forwards;
+}
+@keyframes gb-glitch {
+  0%   { opacity: 0; transform: translateX(0); }
+  8%   { opacity: 1; transform: translateX(-8px); background: linear-gradient(90deg, rgba(255,0,60,0.5), transparent 35%, rgba(0,255,255,0.5)); }
+  16%  { opacity: 1; transform: translateX(7px) skewX(2deg); background: linear-gradient(90deg, rgba(0,255,255,0.5), transparent 40%, rgba(255,0,60,0.5)); }
+  26%  { opacity: 1; transform: translateX(-4px); background: rgba(255,255,255,0.85); }
+  40%  { opacity: 1; transform: translateX(3px) skewX(-2deg); background: linear-gradient(90deg, rgba(255,0,60,0.4), transparent, rgba(0,255,255,0.4)); }
+  60%  { opacity: 0.6; transform: translateX(0); background: rgba(255,255,255,0.4); }
+  100% { opacity: 0; }
+}
+
+/* marquee background */
+.gb-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1; /* behind the card — frame stays visible & usable */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(4px, 1.4vh, 16px);
+  overflow: hidden;
+  background: var(--bg);
+  cursor: pointer;
+  text-decoration: none;
+  animation: gb-reveal 0.4s ease-out;
+}
+@keyframes gb-reveal {
+  from { opacity: 0; filter: blur(8px); }
+  to   { opacity: 1; filter: blur(0); }
+}
+
+.gb-row {
+  display: flex;
+  width: max-content;
+  flex: none;
+  will-change: transform;
+  transform: translateZ(0); /* own GPU layer — keeps the marquee smooth */
+}
+.gb-left  { animation: gb-scroll-left  var(--gb-dur, 20s) linear infinite; }
+.gb-right { animation: gb-scroll-right var(--gb-dur, 20s) linear infinite; }
+@keyframes gb-scroll-left  { from { transform: translateX(0); }    to { transform: translateX(-50%); } }
+@keyframes gb-scroll-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+
+.gb-track {
+  display: flex;
+  align-items: center;
+}
+
+.gb-chunk {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  font-size: clamp(0.78rem, 2.4vw, 1.4rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  /* iridescent animated gradient text */
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15, #ff6ec4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gb-star {
+  /* opt OUT of the gradient text-clip so the emoji renders its native colors */
+  background: none;
+  color: #fbbf24;
+  -webkit-text-fill-color: #fbbf24;
+  filter: drop-shadow(0 0 6px rgba(255, 200, 0, 0.6));
+}
+.gb-dot { color: var(--muted); margin: 0 2px; -webkit-text-fill-color: var(--muted); }
+.gb-chunk svg {
+  vertical-align: middle;
+  fill: #7873f5;
+}
+

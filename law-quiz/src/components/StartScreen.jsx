@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ScalesLogo from './ScalesLogo.jsx';
 import ScoringInfo from './ScoringInfo.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
+import GithubBounce from './GithubBounce.jsx';
 
 function GithubIcon() {
   return (
@@ -23,6 +24,7 @@ export default function StartScreen({ correctEach, setCorrectEach, onStart, them
   const [showInfo, setShowInfo] = useState(false);
   return (
     <div className="start-screen">
+      <GithubBounce />
       <div className="start-topbar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <button className="icon-btn" onClick={() => setShowInfo(true)} aria-label="How scoring works" title="How scoring works">
