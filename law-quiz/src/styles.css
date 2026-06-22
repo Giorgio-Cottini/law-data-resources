@@ -146,6 +146,7 @@ tbody tr:hover { background: var(--surface); }
   background: rgba(0,0,0,0.4);
   display: grid; place-items: center;
   padding: 20px;
+  z-index: 100;
 }
 .modal {
   background: var(--bg);
