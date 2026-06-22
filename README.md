@@ -4,13 +4,11 @@ Study material for the **Law & Data Science** course (Master's in Data Science).
 Covers EU and international data law: treaties, the GDPR, the 2020 Data Strategy
 package, fundamental rights, and leading case law.
 
-> Created by **Giorgio Cottini** with AI assistance from Claude Opus 4.8 and Claude Sonnet 4.6.
-
 ## Practice quiz
 
 An interactive multiple-choice quiz built from the closed questions:
 
-# [▶ Take the quiz](https://law-and-data-quiz.netlify.app)
+## [▶ Take the quiz](https://law-and-data-quiz.netlify.app)
 
 ## What's in here
 
@@ -27,6 +25,10 @@ An interactive multiple-choice quiz built from the closed questions:
 2. Keep `laws.pdf` open as a lookup for exact instruments, articles, and dates.
 3. Drill with the [quiz](https://law-and-data-quiz.netlify.app) or `closed_questions.pdf`.
 4. Practice writing with `open_questions.pdf`.
+
+## Authors
+
+From the master mind of Giorgio Cottini, with generous intellectual and practical assistance from Claude Opus 4.8.
 
 ## License
 
