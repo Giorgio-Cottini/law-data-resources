@@ -27,3 +27,7 @@ An interactive multiple-choice quiz built from the closed questions:
 2. Keep `laws.pdf` open as a lookup for exact instruments, articles, and dates.
 3. Drill with the [quiz](https://law-and-data-quiz.netlify.app) or `closed_questions.pdf`.
 4. Practice writing with `open_questions.pdf`.
+
+## License
+
+[MIT](LICENSE) — free to use, share, and adapt with attribution.
