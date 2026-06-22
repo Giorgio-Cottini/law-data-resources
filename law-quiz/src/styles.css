@@ -284,8 +284,25 @@ tbody tr:hover { background: var(--surface); }
   transition: color 0.2s, text-shadow 0.2s;
 }
 .start-footer a.glow:hover {
-  color: var(--accent);
-  text-shadow: 0 0 8px var(--accent);
+  color: transparent;
+  background: linear-gradient(90deg, #ff2d55, #ff9500, #ffeb3b, #34c759, #00c7be, #0a84ff, #bf5af2, #ff2d55);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: iridescent 3s linear infinite;
+}
+.start-footer a.glow:hover svg {
+  animation: iridescent-glow 3s linear infinite;
+}
+@keyframes iridescent {
+  to { background-position: 300% 0; }
+}
+@keyframes iridescent-glow {
+  0%   { color: #ff2d55; filter: drop-shadow(0 0 6px #ff2d55); }
+  25%  { color: #ffeb3b; filter: drop-shadow(0 0 6px #ffeb3b); }
+  50%  { color: #34c759; filter: drop-shadow(0 0 6px #34c759); }
+  75%  { color: #0a84ff; filter: drop-shadow(0 0 6px #0a84ff); }
+  100% { color: #ff2d55; filter: drop-shadow(0 0 6px #ff2d55); }
 }
 .start-footer a.netlify:hover {
   color: #32E6E2;
