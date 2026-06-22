@@ -7,7 +7,7 @@
       { "text": "that the EU treats personal data as an aspect of individual personality, whereas the US treats data as a market", "correct": true },
       { "text": "that the EU treats personal data as an aspect of individual personality and dignity, whereas the US treats data as a market and relates to liberty", "correct": true },
       { "text": "that only the EU protects privacy", "correct": false },
-      { "text": "that only the US protect privacy", "correct": false },
+      { "text": "that only the US protects privacy", "correct": false },
       { "text": "that only the US approach leverages individual consent to protect privacy", "correct": false }
     ]
   },
@@ -50,7 +50,7 @@
     "options": [
       { "text": "(1) Primary Law, (2) Secondary Law, (3) International Agreements", "correct": false },
       { "text": "(1) Founding treaties, (2) International Agreements, (3) Secondary Law", "correct": true },
-      { "text": "(1) Primary Law, (3) Secondary Law, (3) Member States law", "correct": false }
+      { "text": "(1) Primary Law, (2) Secondary Law, (3) Member States law", "correct": false }
     ]
   },
   {
@@ -69,7 +69,7 @@
     "text": "Which of the following statements is/are correct?",
     "points": 2,
     "options": [
-      { "text": "EU regulations and directives must be directly applied in any of their provision in all Member States", "correct": false },
+      { "text": "EU regulations and directives must be directly applied in any of their provisions in all Member States", "correct": false },
       { "text": "Regulations are directly applicable in all Member States as such, whereas directives need to be implemented by every Member State", "correct": true },
       { "text": "Directives are directly applicable in all Member States as such, whereas regulations need to be implemented by every Member State", "correct": false },
       { "text": "Regulations and directives are adopted by the EU legislator", "correct": true }
@@ -102,7 +102,7 @@
     "points": 1,
     "options": [
       { "text": "gathers the European Data Protection Board and the National Supervisory Authorities", "correct": false },
-      { "text": "is in charge for handling any report of personal data breach committed by any entity within the EU", "correct": false },
+      { "text": "is in charge of handling any report of personal data breach committed by any entity within the EU", "correct": false },
       { "text": "is responsible for handling individuals' reports of data breaches committed by EU institutions only", "correct": true }
     ]
   },
@@ -201,7 +201,7 @@
     "points": 2,
     "options": [
       { "text": "provides for personal data protection in processing activities carried out by EU institutions", "correct": false },
-      { "text": "needed to be implemented in any Member State", "correct": true },
+      { "text": "needed to be implemented in every Member State", "correct": true },
       { "text": "was directly applicable in every Member State since its entry into force", "correct": false },
       { "text": "regulates personal data processing in connection with public communications services in public communications networks within the EU", "correct": true }
     ]
@@ -246,7 +246,7 @@
     "options": [
       { "text": "compulsory only when the appointment of a DPO is required by law", "correct": false },
       { "text": "compulsory only in specific cases expressly set out by law", "correct": true },
-      { "text": "mandatory for any kind of processing activities involving non personal data", "correct": false },
+      { "text": "mandatory for any kind of processing activities involving non-personal data", "correct": false },
       { "text": "compulsory for every kind of processing activities involving personal data", "correct": false }
     ]
   },
@@ -280,8 +280,8 @@
     "points": 2,
     "options": [
       { "text": "All economic operators coming from outside the EU are bound to comply with EU law", "correct": false },
-      { "text": "Many third countries will be legally required to adopt the same legislations adopted by Belgium", "correct": false },
-      { "text": "Some extra-EU legal systems adopted, or will likely adopt, legislations similar to those firstly adopted by the EU", "correct": true },
+      { "text": "Many third countries will be legally required to adopt the same legislation adopted by Belgium", "correct": false },
+      { "text": "Some extra-EU legal systems adopted, or will likely adopt, legislation similar to those first adopted by the EU", "correct": true },
       { "text": "Some third countries will conclude international conventions with the EU for applying EU legislation", "correct": false }
     ]
   },
@@ -303,13 +303,13 @@
     "options": [
       { "text": "paved the way to recognize the right to personal data protection in the EU Charter of Fundamental Rights", "correct": false },
       { "text": "paved the way to include the right to be forgotten in the GDPR as one of the rights recognized to the data subject's benefit", "correct": true },
-      { "text": "originated from a preliminary ruling proceedings referred to the ECJ by a Spanish court", "correct": true },
+      { "text": "originated from preliminary ruling proceedings referred to the ECJ by a Spanish court", "correct": true },
       { "text": "paved the way to include the right to be forgotten in the GDPR as one of the rights recognized to the data controller's benefit", "correct": false }
     ]
   },
   {
     "id": 29,
-    "text": "Which is the correct order of the following sources of EU law in the EU related hierarchy (from the top to the bottom)?",
+    "text": "Which is the correct order of the following sources of EU law in the EU-related hierarchy (from the top to the bottom)?",
     "points": 2,
     "options": [
       { "text": "Regulations/Directives, International Agreements, Charter of Fundamental Rights, Decisions", "correct": false },
