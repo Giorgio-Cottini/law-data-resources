@@ -35,7 +35,7 @@
   },
   {
     "id": 4,
-    "text": "Which of the following are legislative instruments belonging to EU primary law?",
+    "text": "Which of the following is/are legislative instruments belonging to EU primary law?",
     "points": 1,
     "options": [
       { "text": "Treaty of the European Union, Treaty on the functioning of the European Union, Case-law of the European Court of Justice", "correct": false },
@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "text": "Which of the following answers is correct?",
+    "text": "Which of the following answers is/are correct?",
     "points": 1,
     "options": [
       { "text": "(1) Primary Law, (2) Secondary Law, (3) International Agreements", "correct": false },
@@ -55,7 +55,7 @@
   },
   {
     "id": 6,
-    "text": "Which of the following statements is correct?",
+    "text": "Which of the following statements is/are correct?",
     "points": 1,
     "options": [
       { "text": "Freedom of thought cannot be affected by AI technologies", "correct": false },
@@ -66,7 +66,7 @@
   },
   {
     "id": 7,
-    "text": "Which of the following statements is correct?",
+    "text": "Which of the following statements is/are correct?",
     "points": 2,
     "options": [
       { "text": "EU regulations and directives must be directly applied in any of their provision in all Member States", "correct": false },
@@ -287,7 +287,7 @@
   },
   {
     "id": 27,
-    "text": "Which of the following statements is false?",
+    "text": "Which of the following statements is/are false?",
     "points": 2,
     "options": [
       { "text": "The GDPR applies only to EU citizens within the EU", "correct": true },
