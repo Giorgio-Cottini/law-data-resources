@@ -23,10 +23,15 @@ export default function ResultsScreen({ run, selections, onReview, onRetry }) {
 
   return (
     <div className="app">
-      <h1>Results</h1>
-      <p style={{ fontSize: '1.6rem' }}>
-        Score: <strong>{fmt(earned)}</strong> / {max}
-      </p>
+      <div className="results-head">
+        <div>
+          <h1>Results</h1>
+          <p style={{ fontSize: '1.6rem', margin: 0 }}>
+            Score: <strong>{fmt(earned)}</strong> / {max}
+          </p>
+        </div>
+        <button className="primary" onClick={onRetry}>Try again</button>
+      </div>
 
       <div className="stats">
         <div className="stat"><b>{correctSel}</b>correct selections</div>
@@ -47,12 +52,6 @@ export default function ResultsScreen({ run, selections, onReview, onRetry }) {
           ))}
         </tbody>
       </table>
-
-      <div style={{ marginTop: 24, textAlign: 'center' }}>
-        <button className="primary" style={{ fontSize: '1.1rem', padding: '14px 28px' }} onClick={onRetry}>
-          Try again
-        </button>
-      </div>
     </div>
   );
 }

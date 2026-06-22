@@ -10,7 +10,7 @@ import ReviewScreen from './components/ReviewScreen.jsx';
 export default function App() {
   const { theme, setTheme } = useTheme();
   const [phase, setPhase] = useState('start');
-  const [correctEach, setCorrectEach] = useState(false);
+  const [correctEach, setCorrectEach] = useState(true);
   const [run, setRun] = useState([]);
   const [selections, setSelections] = useState([]);
   const [current, setCurrent] = useState(0);
