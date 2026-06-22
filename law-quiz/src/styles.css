@@ -54,6 +54,18 @@ button.primary {
   color: #fff;
 }
 
+button.primary.retry {
+  display: block;
+  width: 100%;
+  padding: 14px 28px;
+  margin-bottom: 20px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.table-hint { color: var(--muted); font-size: 0.9rem; margin: 16px 0 0; }
+
 button:disabled { opacity: 0.5; cursor: default; }
 
 .option {
@@ -116,6 +128,9 @@ table {
 th, td { text-align: left; padding: 6px 12px; border: 1px solid var(--border); }
 th { background: var(--surface); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
 td:last-child, th:last-child { text-align: right; width: 1%; white-space: nowrap; }
+.q-id { width: 1%; white-space: nowrap; color: var(--muted); }
+/* Flexes to remaining width; ellipsis adapts to screen size (fewer chars on mobile, more on desktop). */
+.q-desc { max-width: 0; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 tbody tr { cursor: pointer; }
 tbody tr:hover { background: var(--surface); }
 
