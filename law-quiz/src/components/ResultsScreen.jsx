@@ -37,6 +37,8 @@ export default function ResultsScreen({ run, selections, onReview, onRetry }) {
 
   const fmt = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
+  const perfect = max > 0 && earned === max && run.length >= 20;
+
   return (
     <div className="app">
       <button className="primary retry" onClick={onRetry}>Try again</button>
@@ -46,32 +48,51 @@ export default function ResultsScreen({ run, selections, onReview, onRetry }) {
           <h1>Results</h1>
           <p style={{ fontSize: '1.6rem', margin: 0 }}>
             Score: <strong>{fmt(earned)}</strong> / {max}
+            {perfect && <span className="perfect-badge">Perfect score</span>}
           </p>
         </div>
       </div>
 
-      <div className="stats">
-        <div className="stat"><b>{correctSel}</b>correct selections</div>
-        <div className="stat"><b>{wrongSel}</b>wrong selections</div>
-        <div className="stat"><b>{omitted}</b>missed correct answers</div>
-      </div>
+      {perfect ? (
+        <div className="perfect-wrap">
+          <p className="perfect-hype">YOU RN:</p>
+          <div className="perfect-frame">
+            <video
+              className="perfect-video"
+              src={`${import.meta.env.BASE_URL}aurafarming_perfect.mp4`}
+              autoPlay
+              muted
+              controls
+              playsInline
+            />
+          </div>
+        </div>
+      ) : (
+        <>
+          <div className="stats">
+            <div className="stat"><b>{correctSel}</b>correct selections</div>
+            <div className="stat"><b>{wrongSel}</b>wrong selections</div>
+            <div className="stat"><b>{omitted}</b>missed correct answers</div>
+          </div>
 
-      <p className="table-hint">Click a row to go to the corresponding question.</p>
+          <p className="table-hint">Click a row to go to the corresponding question.</p>
 
-      <table>
-        <thead>
-          <tr><th>Question</th><th>Description</th><th>Points</th></tr>
-        </thead>
-        <tbody>
-          {rows.map((r) => (
-            <tr key={r.i} onClick={() => onReview(r.i)}>
-              <td className="q-id">Q{r.i + 1}</td>
-              <td className="q-desc" title={r.desc}>{r.desc}</td>
-              <td>{fmt(r.score)}/{r.points}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+          <table>
+            <thead>
+              <tr><th>Question</th><th>Description</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r.i} onClick={() => onReview(r.i)}>
+                  <td className="q-id">Q{r.i + 1}</td>
+                  <td className="q-desc" title={r.desc}>{r.desc}</td>
+                  <td>{fmt(r.score)}/{r.points}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
 
       <div className="start-footer">
         <a className="glow" href="https://github.com/Giorgio-Cottini" target="_blank" rel="noreferrer">
