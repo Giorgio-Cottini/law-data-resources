@@ -1,0 +1,9 @@
+# Folders used internally to create the pdf
+summary/
+closed_questions/
+open_questions/
+check/
+
+# Superpowers
+docs/
+.sdd/

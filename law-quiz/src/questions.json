@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "text": "The main difference between the EU and the US approaches to the legal regime of personal data is",
+    "points": 2,
+    "options": [
+      { "text": "that the EU treats personal data as an aspect of individual personality, whereas the US treats data as a market", "correct": true },
+      { "text": "that the EU treats personal data as an aspect of individual personality and dignity, whereas the US treats data as a market and relates to liberty", "correct": true },
+      { "text": "that only the EU protects privacy", "correct": false },
+      { "text": "that only the US protect privacy", "correct": false },
+      { "text": "that only the US approach leverages individual consent to protect privacy", "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Correcting illegal bias in AI",
+    "points": 2,
+    "options": [
+      { "text": "is always legitimate", "correct": false },
+      { "text": "must be done in a way that does not violate basic legal principles such as equality", "correct": true },
+      { "text": "is legally impossible", "correct": false },
+      { "text": "can be done only by amending the algorithm or the dataset for the training", "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "The processing of personal data pursuant to the GDPR may be lawfully carried out",
+    "points": 2,
+    "options": [
+      { "text": "When data subjects expressed their own consent", "correct": true },
+      { "text": "Based on the controller's free choice", "correct": false },
+      { "text": "When there is no consent by data subjects, but the processing is needed for protecting the data subjects' or other individuals' vital interests", "correct": true },
+      { "text": "When there is no consent, but the processing must take place to perform a contract between the controller and any third party", "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Which of the following are legislative instruments belonging to EU primary law?",
+    "points": 1,
+    "options": [
+      { "text": "Treaty of the European Union, Treaty on the functioning of the European Union, Case-law of the European Court of Justice", "correct": false },
+      { "text": "Treaty of the European Union, Treaty on the functioning of the European Union, Charter of fundamental rights of the European Union", "correct": true },
+      { "text": "Charter of fundamental rights of the European Union, Regulations, Case-law of the European Court of Justice", "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Which of the following answers is correct?",
+    "points": 1,
+    "options": [
+      { "text": "(1) Primary Law, (2) Secondary Law, (3) International Agreements", "correct": false },
+      { "text": "(1) Founding treaties, (2) International Agreements, (3) Secondary Law", "correct": true },
+      { "text": "(1) Primary Law, (3) Secondary Law, (3) Member States law", "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Which of the following statements is correct?",
+    "points": 1,
+    "options": [
+      { "text": "Freedom of thought cannot be affected by AI technologies", "correct": false },
+      { "text": "Freedom of thought is not considered as a human right in most jurisdictions", "correct": false },
+      { "text": "Freedom of thought deserves protection only once the individual shares his thoughts with others", "correct": false },
+      { "text": "Freedom of thought is considered as a human right in most jurisdictions but hardly protected in itself", "correct": true }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Which of the following statements is correct?",
+    "points": 2,
+    "options": [
+      { "text": "EU regulations and directives must be directly applied in any of their provision in all Member States", "correct": false },
+      { "text": "Regulations are directly applicable in all Member States as such, whereas directives need to be implemented by every Member State", "correct": true },
+      { "text": "Directives are directly applicable in all Member States as such, whereas regulations need to be implemented by every Member State", "correct": false },
+      { "text": "Regulations and directives are adopted by the EU legislator", "correct": true }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "When the European Court of Human Rights rules that a State has failed to protect a right of an individual:",
+    "points": 1,
+    "options": [
+      { "text": "The Court's ruling replaces the domestic rule that is incompatible with the European Convention of Human Rights", "correct": false },
+      { "text": "It is up to the State to remove the violation of the European Convention", "correct": true },
+      { "text": "The individual can sue the State in the European Court of Human Rights", "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "The European Data Protection Supervisor is:",
+    "points": 1,
+    "options": [
+      { "text": "A national authority supervising on data protection", "correct": false },
+      { "text": "A supranational authority supervising on the activity of national supervisory authorities", "correct": false },
+      { "text": "A supranational supervisor on any processing of personal data of Member States citizens", "correct": false },
+      { "text": "An independent body at the European level supervising on processing carried out by EU Institutions", "correct": true }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "The European Data Protection Supervisor:",
+    "points": 1,
+    "options": [
+      { "text": "gathers the European Data Protection Board and the National Supervisory Authorities", "correct": false },
+      { "text": "is in charge for handling any report of personal data breach committed by any entity within the EU", "correct": false },
+      { "text": "is responsible for handling individuals' reports of data breaches committed by EU institutions only", "correct": true }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "The European Data Protection Board is:",
+    "points": 2,
+    "options": [
+      { "text": "An institution provided for by the Treaty on the European Union", "correct": false },
+      { "text": "An agency of the European Commission with the aim of protecting the fundamental right to data protection", "correct": false },
+      { "text": "An independent body gathering the national supervisory authorities of each EU member State", "correct": true },
+      { "text": "Vested with the power to decide over cases involving EU staff members in their personal data protection processing", "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "The Charter of fundamental rights recognizes the right to privacy and the right to data protection to:",
+    "points": 1,
+    "options": [
+      { "text": "Only individuals with EU citizenship", "correct": false },
+      { "text": "All individuals provided that they are in the EU", "correct": true },
+      { "text": "Only EU companies", "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "What is the difference between regulations and directives in EU law?",
+    "points": 2,
+    "options": [
+      { "text": "Directives must be applied directly in all EU Member States as well as Regulations", "correct": false },
+      { "text": "Regulations are immediately enforceable, while directives need domestic execution", "correct": true },
+      { "text": "Regulations must be directly applied in every country, whereas Directives must be implemented by EU Member States to become applicable", "correct": false },
+      { "text": "Regulations are binding, while directives are only exhortations", "correct": false },
+      { "text": "Regulations establish rules, whereas directives introduce principles", "correct": false },
+      { "text": "Regulations, as well as Directives, must be implemented by every Member State in order to be fully applicable", "correct": false },
+      { "text": "There is no difference between the two notions", "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Social Credit Systems are:",
+    "points": 1,
+    "options": [
+      { "text": "Intrinsically incompatible with basic legal principles", "correct": false },
+      { "text": "Problematic insofar as they are opaque and have wide ramifications for the legal, economic, and social life of a subject", "correct": true },
+      { "text": "Forbidden under Chinese law", "correct": false },
+      { "text": "Forbidden under U.S. Law", "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "The EU Charter of fundamental rights expressly safeguards",
+    "points": 2,
+    "options": [
+      { "text": "The right of data controllers and processors to process anyone's personal data", "correct": false },
+      { "text": "The right of individuals to personal data protection", "correct": true },
+      { "text": "The right of individuals to private and family life", "correct": true },
+      { "text": "The right of individuals to process any other individuals' personal data", "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Should data controllers and data processors be separate entities, the GDPR sets out that:",
+    "points": 2,
+    "options": [
+      { "text": "data controllers are totally free to indicate one or more data processors, the latter not being bound by any obligation towards data controllers", "correct": false },
+      { "text": "their relationships need to be regulated by specific contractual agreements or by different acts provided for by law", "correct": true },
+      { "text": "their mutual relationships need to be regulated only by an order of any competent National Supervisory Authority", "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "What is the difference between synthetic and anonymized data?",
+    "points": 2,
+    "options": [
+      { "text": "Anonymized data are covered by the GDPR, whereas synthetic data are not", "correct": false },
+      { "text": "Anonymized data lose most details and are therefore less useful to train algorithms", "correct": true },
+      { "text": "Synthetic data are covered by the GDPR, whereas anonymized data are not", "correct": false },
+      { "text": "Only anonymization can be reversed to reidentify individuals", "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Why is the protection of personal data insufficient to protect fundamental rights?",
+    "points": 2,
+    "options": [
+      { "text": "Because it only covers specific countries; there is no macroregional standardized regulation", "correct": false },
+      { "text": "Internet users cannot cope with massive consent requests when they visit websites", "correct": true },
+      { "text": "Because AI doesn't use personal data", "correct": false },
+      { "text": "Because AI can be biased", "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "The E-Privacy Directive:",
+    "points": 2,
+    "options": [
+      { "text": "provides for personal data protection in processing activities carried out by EU institutions", "correct": false },
+      { "text": "needed to be implemented in any Member State", "correct": true },
+      { "text": "was directly applicable in every Member State since its entry into force", "correct": false },
+      { "text": "regulates personal data processing in connection with public communications services in public communications networks within the EU", "correct": true }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "The European Electronic Communications Code (so-called Recast Directive):",
+    "points": 2,
+    "options": [
+      { "text": "deals with personal data processing activities in the communication industry", "correct": false },
+      { "text": "aims at ensuring equal and fair access to electronic communications services, promoting at the same time connectivity across the EU", "correct": true },
+      { "text": "does not concern personal data processing activities", "correct": true }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "What is the legal treatment of synthetic data?",
+    "points": 2,
+    "options": [
+      { "text": "Synthetic data are protected by the GDPR.", "correct": false },
+      { "text": "Synthetic data are not covered by the GDPR.", "correct": true },
+      { "text": "Anonymized data are protected by the GDPR.", "correct": false },
+      { "text": "Synthetic data are prohibited under the GDPR.", "correct": false },
+      { "text": "Synthetic data and anonymized data are the same notion.", "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "Why is the protection of personal data so important?",
+    "points": 2,
+    "options": [
+      { "text": "Because the EU does not protect synthetic data", "correct": false },
+      { "text": "The protection of personal data usually serves to protect people from manipulation and exploitation", "correct": true },
+      { "text": "Because AI does not need personal data", "correct": false },
+      { "text": "Because AI can be biased.", "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "A Data Protection Impact Assessment under the GDPR is:",
+    "points": 2,
+    "options": [
+      { "text": "compulsory only when the appointment of a DPO is required by law", "correct": false },
+      { "text": "compulsory only in specific cases expressly set out by law", "correct": true },
+      { "text": "mandatory for any kind of processing activities involving non personal data", "correct": false },
+      { "text": "compulsory for every kind of processing activities involving personal data", "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "A data controller is:",
+    "points": 2,
+    "options": [
+      { "text": "discretionally entitled to reject a data subject's request to access their personal data", "correct": false },
+      { "text": "always required to grant access to a data subject's personal data by anyone requesting it", "correct": false },
+      { "text": "under an obligation to grant access to personal data concerning a specific data subject requesting it, unless otherwise set out by law", "correct": true },
+      { "text": "required to grant access to personal data to subjects other than the data subject, when set forth by law", "correct": true },
+      { "text": "required to grant access to personal data only when data subjects submitted a related request also to the data processor", "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "The AI Act is:",
+    "points": 2,
+    "options": [
+      { "text": "A soft law legal instrument offering guidelines for using AI", "correct": false },
+      { "text": "A hard law regulation adopted by the EU", "correct": true },
+      { "text": "An international convention governing the use of AI worldwide", "correct": false },
+      { "text": "An act adopted by the EU which third countries will be obliged to adopt", "correct": false },
+      { "text": "A regulation adopted by the EU which might influence extra-EU countries in adopting similar legislation", "correct": true }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "The Brussels Effect means that:",
+    "points": 2,
+    "options": [
+      { "text": "All economic operators coming from outside the EU are bound to comply with EU law", "correct": false },
+      { "text": "Many third countries will be legally required to adopt the same legislations adopted by Belgium", "correct": false },
+      { "text": "Some extra-EU legal systems adopted, or will likely adopt, legislations similar to those firstly adopted by the EU", "correct": true },
+      { "text": "Some third countries will conclude international conventions with the EU for applying EU legislation", "correct": false }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Which of the following statements is false?",
+    "points": 2,
+    "options": [
+      { "text": "The GDPR applies only to EU citizens within the EU", "correct": true },
+      { "text": "The GDPR applies to any data subject within the EU", "correct": false },
+      { "text": "The GDPR applies to data controllers incorporated in third countries when they operate in the EU", "correct": false },
+      { "text": "The GDPR does not apply to data controllers incorporated in third countries when they process personal data belonging to EU citizens", "correct": true }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "The 2014 judgment issued by the European Court of Justice in case Google Spain (C-131/12):",
+    "points": 2,
+    "options": [
+      { "text": "paved the way to recognize the right to personal data protection in the EU Charter of Fundamental Rights", "correct": false },
+      { "text": "paved the way to include the right to be forgotten in the GDPR as one of the rights recognized to the data subject's benefit", "correct": true },
+      { "text": "originated from a preliminary ruling proceedings referred to the ECJ by a Spanish court", "correct": true },
+      { "text": "paved the way to include the right to be forgotten in the GDPR as one of the rights recognized to the data controller's benefit", "correct": false }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Which is the correct order of the following sources of EU law in the EU related hierarchy (from the top to the bottom)?",
+    "points": 2,
+    "options": [
+      { "text": "Regulations/Directives, International Agreements, Charter of Fundamental Rights, Decisions", "correct": false },
+      { "text": "Founding Treaties/Charter of Fundamental Rights, Regulations/Directives", "correct": false },
+      { "text": "Founding Treaties/Charter of Fundamental Rights, International Agreements, Regulations/Directives", "correct": true }
+    ]
+  }
+]
