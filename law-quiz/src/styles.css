@@ -179,7 +179,8 @@ tbody tr:hover { background: var(--surface); }
 .start-card .subtitle { color: var(--muted); margin: 0 0 24px; font-size: 0.95rem; }
 
 .start-card .check {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   gap: 10px;
   align-items: center;
   color: var(--text);
@@ -195,6 +196,61 @@ tbody tr:hover { background: var(--surface); }
 }
 
 .start-card .primary { width: 100%; padding: 12px; font-size: 1rem; }
+
+.count-slider {
+  margin: 22px 0;
+  text-align: left;
+}
+.count-slider-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.count-slider-head strong { color: var(--text); font-size: 1rem; }
+.count-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--slider-fill, linear-gradient(to right, #fff 0%, #888 0%));
+  cursor: pointer;
+  outline: none;
+}
+.count-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.count-slider input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.count-slider input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: transparent;
+}
+.count-slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
 
 .study-more {
   display: inline-block;

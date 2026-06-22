@@ -20,8 +20,17 @@ function NetlifyIcon() {
   );
 }
 
-export default function StartScreen({ correctEach, setCorrectEach, onStart, theme, setTheme }) {
+const COUNT_STEPS = [10, 15, 20, 25, Infinity];
+
+export default function StartScreen({
+  correctEach, setCorrectEach, questionCount, setQuestionCount, totalQuestions,
+  onStart, theme, setTheme,
+}) {
   const [showInfo, setShowInfo] = useState(false);
+  const stepIndex = Math.max(0, COUNT_STEPS.indexOf(questionCount));
+  const countLabel = questionCount === Infinity ? `All (${totalQuestions})` : questionCount;
+  const fillPct = (stepIndex / (COUNT_STEPS.length - 1)) * 100;
+  const sliderFill = `linear-gradient(to right, #fff 0%, #fff ${fillPct}%, #888 ${fillPct}%, #888 100%)`;
   return (
     <div className="start-screen">
       <GithubBounce />
@@ -39,6 +48,29 @@ export default function StartScreen({ correctEach, setCorrectEach, onStart, them
         <h1>Law &amp; Data</h1>
         <p className="subtitle">multiple choice quiz</p>
 
+        <button className="primary" onClick={onStart}>Start test</button>
+
+        <div className="count-slider">
+          <div className="count-slider-head">
+            <span>Questions</span>
+            <strong>{countLabel}</strong>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max={COUNT_STEPS.length - 1}
+            step="1"
+            value={stepIndex}
+            style={{ background: sliderFill }}
+            onChange={(e) => setQuestionCount(COUNT_STEPS[Number(e.target.value)])}
+          />
+          <div className="count-slider-ticks">
+            {COUNT_STEPS.map((s) => (
+              <span key={s}>{s === Infinity ? 'All' : s}</span>
+            ))}
+          </div>
+        </div>
+
         <label className="check">
           <input
             type="checkbox"
@@ -47,8 +79,6 @@ export default function StartScreen({ correctEach, setCorrectEach, onStart, them
           />
           Correct each question
         </label>
-
-        <button className="primary" onClick={onStart}>Start test</button>
 
         <a
           className="study-more"

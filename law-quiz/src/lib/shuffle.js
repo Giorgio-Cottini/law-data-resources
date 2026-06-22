@@ -7,9 +7,11 @@ export function shuffle(array, rng = Math.random) {
   return a;
 }
 
-export function buildRun(questions, rng = Math.random) {
-  return shuffle(questions, rng).map((q) => ({
-    ...q,
-    options: shuffle(q.options, rng).map((o) => ({ ...o })),
-  }));
+export function buildRun(questions, limit = Infinity, rng = Math.random) {
+  return shuffle(questions, rng)
+    .slice(0, limit)
+    .map((q) => ({
+      ...q,
+      options: shuffle(q.options, rng).map((o) => ({ ...o })),
+    }));
 }

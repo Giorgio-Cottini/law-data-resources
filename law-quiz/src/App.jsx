@@ -11,6 +11,7 @@ export default function App() {
   const { theme, setTheme } = useTheme();
   const [phase, setPhase] = useState('start');
   const [correctEach, setCorrectEach] = useState(true);
+  const [questionCount, setQuestionCount] = useState(Infinity);
   const [run, setRun] = useState([]);
   const [selections, setSelections] = useState([]);
   const [current, setCurrent] = useState(0);
@@ -18,7 +19,7 @@ export default function App() {
   const [reviewIndex, setReviewIndex] = useState(0);
 
   function start() {
-    const r = buildRun(questions);
+    const r = buildRun(questions, questionCount);
     setRun(r);
     setSelections(r.map(() => new Set()));
     setCurrent(0);
@@ -52,6 +53,9 @@ export default function App() {
       <StartScreen
         correctEach={correctEach}
         setCorrectEach={setCorrectEach}
+        questionCount={questionCount}
+        setQuestionCount={setQuestionCount}
+        totalQuestions={questions.length}
         onStart={start}
         theme={theme}
         setTheme={setTheme}
