@@ -610,3 +610,17 @@ tbody tr:hover { background: var(--surface); }
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--accent, inherit);
+  cursor: pointer;
+  font: inherit;
+  padding: 0.25rem 0;
+}
+.open-toggle {
+  display: block;
+  margin: 0 auto 0.5rem;
+  opacity: 0.85;
+}
