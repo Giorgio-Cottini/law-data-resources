@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import OfficialBadge from './OfficialBadge.jsx';
 import SuggestionList from './SuggestionList.jsx';
+import SuggestionToggle from './SuggestionToggle.jsx';
 import OpenInfo from './OpenInfo.jsx';
 
 function limitLabel(question) {
@@ -40,9 +41,11 @@ export default function OpenQuestionScreen({
         {label && <p className="limit-label">{label}</p>}
       </div>
 
-      <button className="link-btn" onClick={onToggleSuggestion}>
-        {showSuggestion ? 'Hide suggestion' : 'Show suggestion'}
-      </button>
+      <SuggestionToggle
+        open={showSuggestion}
+        suggestions={question.suggestions}
+        onClick={onToggleSuggestion}
+      />
 
       {showSuggestion && <SuggestionList suggestions={question.suggestions} />}
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import OfficialBadge from './OfficialBadge.jsx';
 import SuggestionList from './SuggestionList.jsx';
+import SuggestionToggle from './SuggestionToggle.jsx';
 import OpenInfo from './OpenInfo.jsx';
 
 function SummaryRow({ question }) {
@@ -11,9 +12,11 @@ function SummaryRow({ question }) {
         <span>{question.text}</span>
         <OfficialBadge official={question.official} />
       </div>
-      <button className="link-btn" onClick={() => setOpen((v) => !v)}>
-        {open ? 'Hide suggestion' : 'Show suggestion'}
-      </button>
+      <SuggestionToggle
+        open={open}
+        suggestions={question.suggestions}
+        onClick={() => setOpen((v) => !v)}
+      />
       {open && <SuggestionList suggestions={question.suggestions} />}
     </li>
   );

@@ -619,6 +619,22 @@ tbody tr:hover { background: var(--surface); }
   font: inherit;
   padding: 0.25rem 0;
 }
+/* Suggestion show/hide toggle: states the suggestions' provenance and colours to match */
+.sugg-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.3rem 0;
+  color: var(--accent, inherit);
+}
+.sugg-toggle.is-official {
+  color: #15803d;
+}
+.sugg-toggle.is-unofficial {
+  color: #b45309;
+}
 /* Closed/Open mode switch (segmented control, fixed top-center) */
 .mode-switch {
   position: fixed;

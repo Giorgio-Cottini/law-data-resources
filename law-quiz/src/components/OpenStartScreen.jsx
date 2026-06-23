@@ -4,12 +4,14 @@ import ThemeToggle from './ThemeToggle.jsx';
 import OpenInfo from './OpenInfo.jsx';
 import ModeSwitch from './ModeSwitch.jsx';
 
-const COUNT_STEPS = [5, 10, 20, 30, Infinity];
+const COUNT_MIN = 10;
+const COUNT_MAX = 34;
+const COUNT_STEP = 2;
+const OFFICIAL_MAX = 18;
 
 export default function OpenStartScreen({
   questionCount,
   setQuestionCount,
-  totalQuestions,
   officialOnly,
   setOfficialOnly,
   onStart,
@@ -18,11 +20,21 @@ export default function OpenStartScreen({
   setTheme,
 }) {
   const [showInfo, setShowInfo] = useState(false);
-  const stepIndex = Math.max(0, COUNT_STEPS.indexOf(questionCount));
-  const countLabel =
-    questionCount === Infinity ? `All (${totalQuestions})` : questionCount;
-  const fillPct = (stepIndex / (COUNT_STEPS.length - 1)) * 100;
+  const fillPct =
+    ((questionCount - COUNT_MIN) / (COUNT_MAX - COUNT_MIN)) * 100;
   const sliderFill = `linear-gradient(to right, #fff 0%, #fff ${fillPct}%, #888 ${fillPct}%, #888 100%)`;
+
+  function handleSlide(value) {
+    setQuestionCount(value);
+    // Dragging past the official ceiling drops the official-only restriction.
+    if (value > OFFICIAL_MAX && officialOnly) setOfficialOnly(false);
+  }
+
+  function handleOfficialToggle(checked) {
+    setOfficialOnly(checked);
+    // Restricting to official questions caps the count at the official total.
+    if (checked && questionCount > OFFICIAL_MAX) setQuestionCount(OFFICIAL_MAX);
+  }
 
   return (
     <div className="start-screen">
@@ -53,23 +65,20 @@ export default function OpenStartScreen({
         <div className="count-slider">
           <div className="count-slider-head">
             <span>Questions</span>
-            <strong>{countLabel}</strong>
+            <strong>{questionCount}</strong>
           </div>
           <input
             type="range"
-            min="0"
-            max={COUNT_STEPS.length - 1}
-            step="1"
-            value={stepIndex}
+            min={COUNT_MIN}
+            max={COUNT_MAX}
+            step={COUNT_STEP}
+            value={questionCount}
             style={{ background: sliderFill }}
-            onChange={(e) =>
-              setQuestionCount(COUNT_STEPS[Number(e.target.value)])
-            }
+            onChange={(e) => handleSlide(Number(e.target.value))}
           />
           <div className="count-slider-ticks">
-            {COUNT_STEPS.map((s) => (
-              <span key={s}>{s === Infinity ? 'All' : s}</span>
-            ))}
+            <span>{COUNT_MIN}</span>
+            <span>{COUNT_MAX}</span>
           </div>
         </div>
 
@@ -77,7 +86,7 @@ export default function OpenStartScreen({
           <input
             type="checkbox"
             checked={officialOnly}
-            onChange={(e) => setOfficialOnly(e.target.checked)}
+            onChange={(e) => handleOfficialToggle(e.target.checked)}
           />
           Official questions only
         </label>

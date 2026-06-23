@@ -25,7 +25,7 @@ export default function App() {
   const [eggUnlocked, setEggUnlocked] = useState(false);
   const [appMode, setAppMode] = useState('closed');
   const [openPhase, setOpenPhase] = useState('open-start');
-  const [openCount, setOpenCount] = useState(Infinity);
+  const [openCount, setOpenCount] = useState(34);
   const [openOfficialOnly, setOpenOfficialOnly] = useState(false);
   const [openRun, setOpenRun] = useState([]);
   const [openCurrent, setOpenCurrent] = useState(0);
@@ -81,7 +81,6 @@ export default function App() {
         <OpenStartScreen
           questionCount={openCount}
           setQuestionCount={setOpenCount}
-          totalQuestions={openQuestions.length}
           officialOnly={openOfficialOnly}
           setOfficialOnly={setOpenOfficialOnly}
           onStart={startOpen}
