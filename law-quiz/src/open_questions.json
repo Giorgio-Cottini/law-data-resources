@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "text": "Please identify and illustrate three legal problems posed by social credit systems in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 2,
+    "text": "Please explain the main principles for personal data processing in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 3,
+    "text": "Please illustrate in no more than 100 words the EU personal data protection package adopted since 2016.",
+    "limit": 100,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 4,
+    "text": "Please describe in no more than 250 words the 2020 European Data Strategy conceived by the European Union.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "The GDPR that paved the way to the 2020 European Data Strategy.", "official": true },
+      { "text": "Aims of the EU Data Strategy: free flow of personal data, free flow of non-personal data, single market for data.", "official": true },
+      { "text": "EU Data Strategy Package: Data Governance Act, Digital Services Act, Digital Markets Act, Artificial Intelligence Act, Data Act (a summarized description of their contents).", "official": true }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Please explain the so-called \"Barbra Streisand Effect\" in no more than 100 words.",
+    "limit": 100,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "A brief summary of the facts of the case.", "official": true },
+      { "text": "Description of the Effect: the protection of privacy through legal means can backfire and worsen the situation of the individual.", "official": true },
+      { "text": "Takeaway: the legal protection of privacy can consist in avoiding seeking legal protection.", "official": true },
+      { "text": "Takeaway: the legal vindication of privacy is different - and sometimes opposite - from the social enjoyment of privacy.", "official": true }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Please describe any legal provision included in EU primary law sources setting out the right to personal data protection in max 250 words.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Personal data protection in the TEU, starting from the values of the EU as protected by article 2 TEU and the protection thereof set out in article 3 TEU.", "official": true },
+      { "text": "Personal data protection as set forth by article 16 TFEU.", "official": true },
+      { "text": "The fundamental right to data protection in the Charter of Fundamental Rights (article 8 CFR) and possible reference to article 7 CFR on the right to privacy (and their differences).", "official": true },
+      { "text": "Possible limitations of fundamental rights and, specifically, of the right to data protection in light of the safeguard clause (article 52 CFR) - the balancing of conflicting rights.", "official": true }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Please describe the structure of the \"proportionality scrutiny\" in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Does the measure under scrutiny pursue a legitimate goal?", "official": true },
+      { "text": "Is the measure concretely connected with the purported goal (the \"rational connection\" step - some courts omit it)?", "official": true },
+      { "text": "Is the measure necessary to pursue that goal? (the \"least restrictive means\" step)", "official": true },
+      { "text": "Are the benefits more than the sacrifices that the measure causes to the interests and rights that are involved?", "official": true }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Please explain what 'personal data' means according to the EU personal data protection legislation and the difference with sensitive personal data in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Definition of personal data according to article 4(1) of the GDPR.", "official": true },
+      { "text": "Definition of sensitive data, even involving article 9 GDPR.", "official": true },
+      { "text": "Differences in the processing of personal data and sensitive personal data.", "official": true },
+      { "text": "Lawful reasons for processing personal data and sensitive personal data with or without data subjects' consent.", "official": true },
+      { "text": "Possible references to the origins of the definition of personal data and sensitive personal data (Convention 108, OECD Guidelines).", "official": true }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Please describe which are the main rights recognized to a data subject by the GDPR in max 250 words.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Right to access.", "official": true },
+      { "text": "Right to data rectification.", "official": true },
+      { "text": "Right to data erasure - right to be forgotten.", "official": true },
+      { "text": "Right to processing restriction.", "official": true },
+      { "text": "Right to data portability.", "official": true },
+      { "text": "Right to limit the processing.", "official": true },
+      { "text": "Right to object to data processing.", "official": true },
+      { "text": "Right to lodge a complaint before the NSA.", "official": true },
+      { "text": "Right to seek legal redress before Courts.", "official": true }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Why is the notion of synthetic data relevant in the field of privacy protection? How would you define synthetic data?",
+    "limit": null,
+    "limitUnit": null,
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 11,
+    "text": "Please describe how the right to privacy evolved into the right to personal data protection in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 12,
+    "text": "Please describe a Data Protection Impact Assessment and its aims in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 13,
+    "text": "Please describe in no more than 150 words the difference between EU regulations and directives.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 14,
+    "text": "Please describe the main subjects involved in personal data processing activities and their rights and obligations according to the GDPR in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 15,
+    "text": "Please describe in no more than 150 words the legal status of EU regulations.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 16,
+    "text": "Please describe the differences of processing activities involving personal data and sensitive personal data in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": []
+  },
+  {
+    "id": 17,
+    "text": "Please describe the evolution of [personal] data protection legislation in the EU legal system in no more than 12 lines.",
+    "limit": 12,
+    "limitUnit": "lines",
+    "official": true,
+    "suggestions": [
+      { "text": "Directive 95/46/EC (liability approach).", "official": true },
+      { "text": "Nice Charter, articles 7 and 8.", "official": true },
+      { "text": "Articles 2 and 3 of the TEU.", "official": true },
+      { "text": "Article 16 of the TFEU.", "official": true },
+      { "text": "Article 39 of the TEU.", "official": true },
+      { "text": "Charter of Fundamental Rights, articles 7 and 8.", "official": true },
+      { "text": "Shift to a compliance approach -> GDPR.", "official": true },
+      { "text": "Data Protection Package.", "official": true },
+      { "text": "Reference to CoE (i.e. case-law).", "official": true },
+      { "text": "Possible references to other EU directives and regulations.", "official": true }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Please describe the development of EU secondary law (from directives to regulations) of personal data and the reasons underlying said development in no more than 15 lines.",
+    "limit": 15,
+    "limitUnit": "lines",
+    "official": true,
+    "suggestions": [
+      { "text": "Directive 95/46.", "official": true },
+      { "text": "GDPR 2016/679.", "official": true },
+      { "text": "Regulation 2018/1725.", "official": true },
+      { "text": "Directive 2016/680 (on prevention, investigation, detection, prosecution of criminal offences).", "official": true },
+      { "text": "EU Data Protection Package.", "official": true },
+      { "text": "Using directives shifted to the use of regulations to ensure a compliance-oriented approach.", "official": true },
+      { "text": "More harmonization within the EU (reason for the shift from directives to regulations).", "official": true }
+    ]
+  }
+]
