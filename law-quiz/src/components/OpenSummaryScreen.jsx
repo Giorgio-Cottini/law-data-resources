@@ -3,6 +3,7 @@ import OfficialBadge from './OfficialBadge.jsx';
 import SuggestionList from './SuggestionList.jsx';
 import SuggestionToggle from './SuggestionToggle.jsx';
 import OpenInfo from './OpenInfo.jsx';
+import SiteFooter from './SiteFooter.jsx';
 
 function SummaryRow({ question }) {
   const [open, setOpen] = useState(false);
@@ -51,6 +52,8 @@ export default function OpenSummaryScreen({ run, onRestart }) {
           New set
         </button>
       </div>
+
+      <SiteFooter />
 
       {showInfo && <OpenInfo onClose={() => setShowInfo(false)} />}
     </div>

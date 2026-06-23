@@ -3,6 +3,7 @@ import ScalesLogo from './ScalesLogo.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
 import OpenInfo from './OpenInfo.jsx';
 import ModeSwitch from './ModeSwitch.jsx';
+import SiteFooter from './SiteFooter.jsx';
 
 const COUNT_MIN = 10;
 const COUNT_MAX = 34;
@@ -100,25 +101,7 @@ export default function OpenStartScreen({
           Exam Prep Resources <span className="arrow">→</span>
         </a>
 
-        <div className="start-footer">
-          <a
-            className="glow"
-            href="https://github.com/Giorgio-Cottini"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <span className="sep">·</span>
-          <a
-            className="netlify"
-            href="https://www.netlify.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Deploys on Netlify
-          </a>
-        </div>
+        <SiteFooter />
       </div>
 
       {showInfo && (
