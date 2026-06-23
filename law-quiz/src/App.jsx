@@ -66,7 +66,7 @@ export default function App() {
     setOpenRun(r);
     setOpenCurrent(0);
     setOpenShowSuggestion(false);
-    setOpenPhase('open-question');
+    setOpenPhase(r.length === 0 ? 'open-summary' : 'open-question');
   }
 
   function openNext() {
