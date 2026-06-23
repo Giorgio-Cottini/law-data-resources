@@ -2,13 +2,13 @@ import { describe, it, expect } from 'vitest';
 import open from '../open_questions.json';
 
 describe('open_questions.json', () => {
-  it('has exactly 18 questions', () => {
-    expect(open).toHaveLength(18);
+  it('has exactly 34 questions', () => {
+    expect(open).toHaveLength(34);
   });
 
-  it('ids are unique and 1..18', () => {
+  it('ids are unique and 1..34', () => {
     const ids = open.map((q) => q.id).sort((a, b) => a - b);
-    expect(ids).toEqual(Array.from({ length: 18 }, (_, i) => i + 1));
+    expect(ids).toEqual(Array.from({ length: 34 }, (_, i) => i + 1));
   });
 
   it('every question has the required shape', () => {
@@ -26,10 +26,16 @@ describe('open_questions.json', () => {
     }
   });
 
-  it('every current question and suggestion is official', () => {
-    for (const q of open) {
-      expect(q.official).toBe(true);
-      for (const s of q.suggestions) expect(s.official).toBe(true);
+  it('official questions are exactly ids 1..18, unofficial are 19..34', () => {
+    const official = open.filter((q) => q.official).map((q) => q.id).sort((a, b) => a - b);
+    const unofficial = open.filter((q) => !q.official).map((q) => q.id).sort((a, b) => a - b);
+    expect(official).toEqual(Array.from({ length: 18 }, (_, i) => i + 1));
+    expect(unofficial).toEqual(Array.from({ length: 16 }, (_, i) => i + 19));
+  });
+
+  it('every unofficial question carries only unofficial suggestions', () => {
+    for (const q of open.filter((q) => !q.official)) {
+      for (const s of q.suggestions) expect(s.official).toBe(false);
     }
   });
 });
