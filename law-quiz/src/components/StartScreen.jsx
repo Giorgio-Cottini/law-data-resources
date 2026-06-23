@@ -44,6 +44,7 @@ export default function StartScreen({
   theme,
   setTheme,
   onEggUnlock,
+  onGoToOpen,
 }) {
   const [showInfo, setShowInfo] = useState(false);
   const stepIndex = Math.max(0, COUNT_STEPS.indexOf(questionCount));
@@ -54,6 +55,9 @@ export default function StartScreen({
   return (
     <div className="start-screen">
       <GithubBounce onUnlock={onEggUnlock} />
+      <button className="link-btn open-toggle" onClick={onGoToOpen}>
+        Go to open questions →
+      </button>
       <div className="start-topbar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <button
