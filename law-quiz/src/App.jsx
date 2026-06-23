@@ -75,6 +75,11 @@ export default function App() {
     else setOpenCurrent((c) => c + 1);
   }
 
+  function openPrev() {
+    setOpenShowSuggestion(false);
+    setOpenCurrent((c) => Math.max(0, c - 1));
+  }
+
   if (appMode === 'open') {
     if (openPhase === 'open-start') {
       return (
@@ -98,6 +103,7 @@ export default function App() {
           total={openRun.length}
           showSuggestion={openShowSuggestion}
           onToggleSuggestion={() => setOpenShowSuggestion((v) => !v)}
+          onPrev={openPrev}
           onNext={openNext}
         />
       );

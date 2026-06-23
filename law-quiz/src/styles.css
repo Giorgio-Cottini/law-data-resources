@@ -54,6 +54,16 @@ button.primary {
   color: #fff;
 }
 
+button.secondary {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+button.secondary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 button.primary.retry {
   display: block;
   width: 100%;

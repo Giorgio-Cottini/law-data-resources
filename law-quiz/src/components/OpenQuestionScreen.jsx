@@ -15,6 +15,7 @@ export default function OpenQuestionScreen({
   total,
   showSuggestion,
   onToggleSuggestion,
+  onPrev,
   onNext,
 }) {
   const [showInfo, setShowInfo] = useState(false);
@@ -50,7 +51,9 @@ export default function OpenQuestionScreen({
       {showSuggestion && <SuggestionList suggestions={question.suggestions} />}
 
       <div className="bottom-bar">
-        <span />
+        <button className="secondary" onClick={onPrev} disabled={index === 0}>
+          Previous
+        </button>
         <span />
         <button className="primary" onClick={onNext}>
           {isLast ? 'See summary' : 'Next'}
