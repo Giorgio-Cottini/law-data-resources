@@ -13,3 +13,8 @@ docs/
 
 # animations
 logo/
+
+# JS tooling
+law-quiz/node_modules/
+law-quiz/dist/
+law-quiz/.vite/
