@@ -545,3 +545,29 @@ tbody tr:hover { background: var(--surface); }
   fill: #7873f5;
 }
 
+/* Open-mode official/unofficial visual clues */
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15em 0.55em;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+.badge-official {
+  color: #15803d;
+  background: rgba(34, 197, 94, 0.12);
+}
+.badge-unofficial {
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.12);
+}
+.card-official {
+  border-left: 3px solid #22c55e;
+}
+.card-unofficial {
+  border-left: 3px solid #f59e0b;
+}
+
