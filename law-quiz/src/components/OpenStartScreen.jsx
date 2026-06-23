@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import ScalesLogo from './ScalesLogo.jsx';
-import ThemeToggle from './ThemeToggle.jsx';
-import OpenInfo from './OpenInfo.jsx';
-import ModeSwitch from './ModeSwitch.jsx';
-import SiteFooter from './SiteFooter.jsx';
+import { useState } from "react";
+import ScalesLogo from "./ScalesLogo.jsx";
+import ThemeToggle from "./ThemeToggle.jsx";
+import OpenInfo from "./OpenInfo.jsx";
+import ModeSwitch from "./ModeSwitch.jsx";
+import SiteFooter from "./SiteFooter.jsx";
 
 const COUNT_MIN = 10;
 const COUNT_MAX = 34;
@@ -21,8 +21,7 @@ export default function OpenStartScreen({
   setTheme,
 }) {
   const [showInfo, setShowInfo] = useState(false);
-  const fillPct =
-    ((questionCount - COUNT_MIN) / (COUNT_MAX - COUNT_MIN)) * 100;
+  const fillPct = ((questionCount - COUNT_MIN) / (COUNT_MAX - COUNT_MIN)) * 100;
   const sliderFill = `linear-gradient(to right, #fff 0%, #fff ${fillPct}%, #888 ${fillPct}%, #888 100%)`;
 
   function handleSlide(value) {
@@ -53,7 +52,7 @@ export default function OpenStartScreen({
       </div>
 
       <div className="start-card">
-        <div style={{ color: 'var(--accent)' }}>
+        <div style={{ color: "var(--accent)" }}>
           <ScalesLogo size={56} />
         </div>
         <h1>Law &amp; Data</h1>
