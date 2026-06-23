@@ -47,7 +47,7 @@ From the master mind of Giorgio Cottini, with generous intellectual and practica
 ## Author's note
 
 I am not an app developer. I am merely an UI vibe-coder, and i delegate the vast majority of UI-related tasks to LLMs.
-Not only that, but I'm also cheap: I'm not really prone to spending money (on top of the pro-plans 20$) in order to polish a secondary project.
+Not only that, but I'm also cheap: I'm not really prone to spending money (on top of the pro-plan's 20$) in order to polish a secondary project.
 
 These facts are reflected in the code: the app code is sub-optimal and repetitive, the structure is rushed and flat.
 
