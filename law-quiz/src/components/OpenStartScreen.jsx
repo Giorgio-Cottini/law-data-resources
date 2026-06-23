@@ -56,7 +56,7 @@ export default function OpenStartScreen({
           <ScalesLogo size={56} />
         </div>
         <h1>Law &amp; Data</h1>
-        <p className="subtitle">open questions</p>
+        <p className="subtitle">open questions playground</p>
 
         <button className="primary" onClick={onStart}>
           Start practice

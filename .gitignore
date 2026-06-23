@@ -2,10 +2,11 @@
 summary/
 closed_questions/
 open_questions/
-check/
+public_open_questions/
 
 # Superpowers
 docs/
+.superpowers/
 .sdd/
 
 # Serena MCP
