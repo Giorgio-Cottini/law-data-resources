@@ -13,10 +13,10 @@ scoring, answer review, shuffling, and a dark/light theme. No install needed.
 
 | File                                           | Contents                                                                                                                                                              |
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`summary.pdf`](summary.pdf)                   | Concept-dense summary of the whole course. Enough to answer every exam question; each legal instrument explained in context.                                           |
-| [`laws.pdf`](laws.pdf)                         | Reference catalogue of every legal instrument cited — international, Council of Europe, EU primary law (treaties + Charter), EU secondary law, the 2020 Data Strategy package, and case law, with articles and dates. |
-| [`closed_questions.pdf`](closed_questions.pdf) | Multiple-choice questions **with answers** (correct ones bold and check-marked; some have several). Same set powers the quiz.                                          |
-| [`open_questions.pdf`](open_questions.pdf)     | Open-ended exam questions, short-essay / discussion format.                                                                                                            |
+| [`summary.pdf`](ResourceHub/summary.pdf)                   | Concept-dense summary of the whole course. Enough to answer every exam question; each legal instrument explained in context.                                           |
+| [`laws.pdf`](ResourceHub/laws.pdf)                         | Reference catalogue of every legal instrument cited — international, Council of Europe, EU primary law (treaties + Charter), EU secondary law, the 2020 Data Strategy package, and case law, with articles and dates. |
+| [`closed_questions.pdf`](ResourceHub/closed_questions.pdf) | Multiple-choice questions **with answers** (correct ones bold and check-marked; some have several). Same set powers the quiz.                                          |
+| [`open_questions.pdf`](ResourceHub/open_questions.pdf)     | Open-ended exam questions, short-essay / discussion format.                                                                                                            |
 
 ## How to use them
 
