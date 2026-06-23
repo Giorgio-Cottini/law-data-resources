@@ -619,21 +619,45 @@ tbody tr:hover { background: var(--surface); }
   font: inherit;
   padding: 0.25rem 0;
 }
-/* Suggestion show/hide toggle: states the suggestions' provenance and colours to match */
+/* Suggestion show/hide toggle: a bordered button; neutral text, coloured frame + caret by provenance */
 .sugg-toggle {
-  background: none;
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   cursor: pointer;
   font: inherit;
   font-weight: 600;
-  padding: 0.3rem 0;
-  color: var(--accent, inherit);
+  color: var(--fg, inherit);
+  padding: 0.45rem 0.9rem;
+  border: 1.5px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-radius: 8px;
+  background: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.sugg-toggle:hover {
+  background: rgba(127, 127, 127, 0.08);
 }
 .sugg-toggle.is-official {
-  color: #15803d;
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+.sugg-toggle.is-official .sugg-toggle-caret {
+  color: #22c55e;
 }
 .sugg-toggle.is-unofficial {
-  color: #b45309;
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+}
+.sugg-toggle.is-unofficial .sugg-toggle-caret {
+  color: #f59e0b;
+}
+.sugg-toggle-caret {
+  font-size: 0.85em;
+  line-height: 1;
+  transition: transform 0.18s ease;
+}
+.sugg-toggle-caret.is-open {
+  transform: rotate(180deg);
 }
 /* Closed/Open mode switch (segmented control, fixed top-center) */
 .mode-switch {
