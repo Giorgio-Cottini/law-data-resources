@@ -43,6 +43,7 @@ export default function StartScreen({
   onStart,
   theme,
   setTheme,
+  onEggUnlock,
 }) {
   const [showInfo, setShowInfo] = useState(false);
   const stepIndex = Math.max(0, COUNT_STEPS.indexOf(questionCount));
@@ -52,7 +53,7 @@ export default function StartScreen({
   const sliderFill = `linear-gradient(to right, #fff 0%, #fff ${fillPct}%, #888 ${fillPct}%, #888 100%)`;
   return (
     <div className="start-screen">
-      <GithubBounce />
+      <GithubBounce onUnlock={onEggUnlock} />
       <div className="start-topbar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <button

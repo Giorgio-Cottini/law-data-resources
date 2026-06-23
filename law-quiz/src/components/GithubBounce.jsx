@@ -24,7 +24,7 @@ function MarqueeChunk() {
   );
 }
 
-export default function GithubBounce() {
+export default function GithubBounce({ onUnlock }) {
   // phase: 'bounce' -> 'boom' -> 'bg'
   const [phase, setPhase] = useState('bounce');
   const [boom, setBoom] = useState({ x: 0, y: 0 });
@@ -58,6 +58,7 @@ export default function GithubBounce() {
 
   function explode() {
     cancelAnimationFrame(raf.current);
+    onUnlock?.();
     const p = pos.current;
     setBoom({ x: p.x + SIZE / 2, y: p.y + SIZE / 2 });
     setPhase('boom');

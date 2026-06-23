@@ -17,6 +17,7 @@ export default function App() {
   const [current, setCurrent] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
+  const [eggUnlocked, setEggUnlocked] = useState(false);
 
   function start() {
     const r = buildRun(questions, questionCount);
@@ -59,6 +60,7 @@ export default function App() {
         onStart={start}
         theme={theme}
         setTheme={setTheme}
+        onEggUnlock={() => setEggUnlocked(true)}
       />
     );
   }
@@ -86,6 +88,7 @@ export default function App() {
         selections={selections}
         onReview={(i) => { setReviewIndex(i); setPhase('review'); }}
         onRetry={() => setPhase('start')}
+        eggUnlocked={eggUnlocked}
       />
     );
   }

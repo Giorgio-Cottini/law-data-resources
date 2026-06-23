@@ -16,7 +16,7 @@ function NetlifyIcon() {
   );
 }
 
-export default function ResultsScreen({ run, selections, onReview, onRetry }) {
+export default function ResultsScreen({ run, selections, onReview, onRetry, eggUnlocked }) {
   let correctSel = 0;
   let wrongSel = 0;
   let omitted = 0;
@@ -37,7 +37,8 @@ export default function ResultsScreen({ run, selections, onReview, onRetry }) {
 
   const fmt = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
-  const perfect = max > 0 && earned === max && run.length >= 20;
+  const perfect = max > 0 && earned === max;
+  const blingy = perfect && run.length >= 20 && eggUnlocked;
 
   return (
     <div className="app">
@@ -53,7 +54,7 @@ export default function ResultsScreen({ run, selections, onReview, onRetry }) {
         </div>
       </div>
 
-      {perfect ? (
+      {blingy ? (
         <div className="perfect-wrap">
           <p className="perfect-hype">YOU RN:</p>
           <div className="perfect-frame">
