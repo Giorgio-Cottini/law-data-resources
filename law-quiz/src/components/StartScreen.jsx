@@ -3,6 +3,7 @@ import ScalesLogo from "./ScalesLogo.jsx";
 import ScoringInfo from "./ScoringInfo.jsx";
 import ThemeToggle from "./ThemeToggle.jsx";
 import GithubBounce from "./GithubBounce.jsx";
+import ModeSwitch from "./ModeSwitch.jsx";
 
 function GithubIcon() {
   return (
@@ -55,9 +56,7 @@ export default function StartScreen({
   return (
     <div className="start-screen">
       <GithubBounce onUnlock={onEggUnlock} />
-      <button className="link-btn open-toggle" onClick={onGoToOpen}>
-        Go to open questions →
-      </button>
+      <ModeSwitch mode="closed" onSelect={onGoToOpen} />
       <div className="start-topbar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <button

@@ -619,10 +619,45 @@ tbody tr:hover { background: var(--surface); }
   font: inherit;
   padding: 0.25rem 0;
 }
-.open-toggle {
-  display: block;
-  margin: 0 auto 0.5rem;
-  opacity: 0.85;
+/* Closed/Open mode switch (segmented control, fixed top-center) */
+.mode-switch {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6; /* above the fixed topbar and the bouncing logo */
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card, #1c1c24) 80%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent, #c62828) 45%, transparent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+.mode-switch-opt {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: var(--fg, #e8e8ea);
+  opacity: 0.7;
+  padding: 0.4em 1.15em;
+  border-radius: 999px;
+  transition: background 0.18s ease, color 0.18s ease, opacity 0.18s ease;
+}
+.mode-switch-opt:hover {
+  opacity: 1;
+}
+.mode-switch-opt.is-active {
+  background: var(--accent, #c62828);
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent, #c62828) 50%, transparent);
+  cursor: default;
 }
 .open-topbar {
   display: flex;

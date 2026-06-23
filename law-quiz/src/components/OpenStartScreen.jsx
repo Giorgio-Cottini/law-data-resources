@@ -2,8 +2,9 @@ import { useState } from 'react';
 import ScalesLogo from './ScalesLogo.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
 import OpenInfo from './OpenInfo.jsx';
+import ModeSwitch from './ModeSwitch.jsx';
 
-const COUNT_STEPS = [5, 10, 15, Infinity];
+const COUNT_STEPS = [5, 10, 20, 30, Infinity];
 
 export default function OpenStartScreen({
   questionCount,
@@ -25,6 +26,7 @@ export default function OpenStartScreen({
 
   return (
     <div className="start-screen">
+      <ModeSwitch mode="open" onSelect={onBackToClosed} />
       <div className="start-topbar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <button
@@ -36,10 +38,6 @@ export default function OpenStartScreen({
           i
         </button>
       </div>
-
-      <button className="link-btn open-toggle" onClick={onBackToClosed}>
-        ← Back to closed questions
-      </button>
 
       <div className="start-card">
         <div style={{ color: 'var(--accent)' }}>
