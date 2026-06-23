@@ -6,6 +6,11 @@ import StartScreen from './components/StartScreen.jsx';
 import QuizScreen from './components/QuizScreen.jsx';
 import ResultsScreen from './components/ResultsScreen.jsx';
 import ReviewScreen from './components/ReviewScreen.jsx';
+import OpenStartScreen from './components/OpenStartScreen.jsx';
+import OpenQuestionScreen from './components/OpenQuestionScreen.jsx';
+import OpenSummaryScreen from './components/OpenSummaryScreen.jsx';
+import openQuestions from './open_questions.json';
+import { buildOpenRun } from './lib/openRun.js';
 
 export default function App() {
   const { theme, setTheme } = useTheme();
@@ -18,6 +23,13 @@ export default function App() {
   const [revealed, setRevealed] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
   const [eggUnlocked, setEggUnlocked] = useState(false);
+  const [appMode, setAppMode] = useState('closed');
+  const [openPhase, setOpenPhase] = useState('open-start');
+  const [openCount, setOpenCount] = useState(34);
+  const [openOfficialOnly, setOpenOfficialOnly] = useState(false);
+  const [openRun, setOpenRun] = useState([]);
+  const [openCurrent, setOpenCurrent] = useState(0);
+  const [openShowSuggestion, setOpenShowSuggestion] = useState(false);
 
   function start() {
     const r = buildRun(questions, questionCount);
@@ -49,6 +61,61 @@ export default function App() {
     else setCurrent((c) => c + 1);
   }
 
+  function startOpen() {
+    const r = buildOpenRun(openQuestions, openCount, openOfficialOnly);
+    setOpenRun(r);
+    setOpenCurrent(0);
+    setOpenShowSuggestion(false);
+    setOpenPhase(r.length === 0 ? 'open-summary' : 'open-question');
+  }
+
+  function openNext() {
+    setOpenShowSuggestion(false);
+    if (openCurrent === openRun.length - 1) setOpenPhase('open-summary');
+    else setOpenCurrent((c) => c + 1);
+  }
+
+  function openPrev() {
+    setOpenShowSuggestion(false);
+    setOpenCurrent((c) => Math.max(0, c - 1));
+  }
+
+  if (appMode === 'open') {
+    if (openPhase === 'open-start') {
+      return (
+        <OpenStartScreen
+          questionCount={openCount}
+          setQuestionCount={setOpenCount}
+          officialOnly={openOfficialOnly}
+          setOfficialOnly={setOpenOfficialOnly}
+          onStart={startOpen}
+          onBackToClosed={() => setAppMode('closed')}
+          theme={theme}
+          setTheme={setTheme}
+        />
+      );
+    }
+    if (openPhase === 'open-question') {
+      return (
+        <OpenQuestionScreen
+          question={openRun[openCurrent]}
+          index={openCurrent}
+          total={openRun.length}
+          showSuggestion={openShowSuggestion}
+          onToggleSuggestion={() => setOpenShowSuggestion((v) => !v)}
+          onPrev={openPrev}
+          onNext={openNext}
+        />
+      );
+    }
+    return (
+      <OpenSummaryScreen
+        run={openRun}
+        onRestart={() => setOpenPhase('open-start')}
+      />
+    );
+  }
+
   if (phase === 'start') {
     return (
       <StartScreen
@@ -61,6 +128,7 @@ export default function App() {
         theme={theme}
         setTheme={setTheme}
         onEggUnlock={() => setEggUnlocked(true)}
+        onGoToOpen={() => setAppMode('open')}
       />
     );
   }

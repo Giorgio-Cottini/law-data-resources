@@ -1,0 +1,490 @@
+[
+  {
+    "id": 1,
+    "text": "Please identify and illustrate three legal problems posed by social credit systems in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Privacy and data protection: mass collection, aggregation, and continuous monitoring of personal data; lack of genuine consent or transparency; reference to GDPR principles and Art. 8 CFR.", "official": false },
+      { "text": "Discrimination and equality: opaque automated scoring producing unjustified differential treatment; risk of social exclusion without adequate redress.", "official": false },
+      { "text": "Due process and rule of law: sanctions imposed without clear legal basis, procedural safeguards, or effective remedies; chilling effects on freedom of expression and association.", "official": false },
+      { "text": "AI Act (Regulation 2024/1689, Art. 5): government social scoring classified as unacceptable-risk practice and prohibited outright.", "official": false }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Please explain the main principles for personal data processing in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Source: Art. 5 GDPR (seven principles).", "official": false },
+      { "text": "Lawfulness, fairness, transparency: valid legal basis (Art. 6); fair to data subjects; clear information on purposes, controller identity, and data subjects' rights.", "official": false },
+      { "text": "Purpose limitation: collected for specified, explicit, legitimate purposes; no incompatible further processing.", "official": false },
+      { "text": "Data minimisation: only adequate, relevant, and necessary data.", "official": false },
+      { "text": "Accuracy: data must be correct and up to date; inaccurate data must be rectified or erased.", "official": false },
+      { "text": "Storage limitation: identifiable no longer than necessary; Art. 17 obligation to erase once purpose lapses.", "official": false },
+      { "text": "Integrity and confidentiality: appropriate TOMs against unauthorised access or destruction.", "official": false },
+      { "text": "Accountability: controllers must be able to demonstrate compliance; rooted in Convention 108.", "official": false }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Please illustrate in no more than 100 words the EU personal data protection package adopted since 2016.",
+    "limit": 100,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "GDPR (Regulation 2016/679): comprehensive framework for personal data processing in and outside the EU.", "official": false },
+      { "text": "Law Enforcement Directive (2016/680): data protection in the police and criminal justice sector; replaced Framework Decision 2008/977/JHA.", "official": false },
+      { "text": "ePrivacy Directive (2002/58/EC): personal data in the electronic communications sector; remains in force.", "official": false },
+      { "text": "Regulation 2018/1725: extends equivalent standards to EU institutions, bodies, and agencies.", "official": false }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Please describe in no more than 250 words the 2020 European Data Strategy conceived by the European Union.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "The GDPR that paved the way to the 2020 European Data Strategy.", "official": true },
+      { "text": "Aims of the EU Data Strategy: free flow of personal data, free flow of non-personal data, single market for data.", "official": true },
+      { "text": "EU Data Strategy Package: Data Governance Act, Digital Services Act, Digital Markets Act, Artificial Intelligence Act, Data Act (a summarized description of their contents).", "official": true }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Please explain the so-called \"Barbra Streisand Effect\" in no more than 100 words.",
+    "limit": 100,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "A brief summary of the facts of the case.", "official": true },
+      { "text": "Description of the Effect: the protection of privacy through legal means can backfire and worsen the situation of the individual.", "official": true },
+      { "text": "Takeaway: the legal protection of privacy can consist in avoiding seeking legal protection.", "official": true },
+      { "text": "Takeaway: the legal vindication of privacy is different - and sometimes opposite - from the social enjoyment of privacy.", "official": true }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Please describe any legal provision included in EU primary law sources setting out the right to personal data protection in max 250 words.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Personal data protection in the TEU, starting from the values of the EU as protected by article 2 TEU and the protection thereof set out in article 3 TEU.", "official": true },
+      { "text": "Personal data protection as set forth by article 16 TFEU.", "official": true },
+      { "text": "The fundamental right to data protection in the Charter of Fundamental Rights (article 8 CFR) and possible reference to article 7 CFR on the right to privacy (and their differences).", "official": true },
+      { "text": "Possible limitations of fundamental rights and, specifically, of the right to data protection in light of the safeguard clause (article 52 CFR) - the balancing of conflicting rights.", "official": true }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Please describe the structure of the \"proportionality scrutiny\" in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Does the measure under scrutiny pursue a legitimate goal?", "official": true },
+      { "text": "Is the measure concretely connected with the purported goal (the \"rational connection\" step - some courts omit it)?", "official": true },
+      { "text": "Is the measure necessary to pursue that goal? (the \"least restrictive means\" step)", "official": true },
+      { "text": "Are the benefits more than the sacrifices that the measure causes to the interests and rights that are involved?", "official": true }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Please explain what 'personal data' means according to the EU personal data protection legislation and the difference with sensitive personal data in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Definition of personal data according to article 4(1) of the GDPR.", "official": true },
+      { "text": "Definition of sensitive data, even involving article 9 GDPR.", "official": true },
+      { "text": "Differences in the processing of personal data and sensitive personal data.", "official": true },
+      { "text": "Lawful reasons for processing personal data and sensitive personal data with or without data subjects' consent.", "official": true },
+      { "text": "Possible references to the origins of the definition of personal data and sensitive personal data (Convention 108, OECD Guidelines).", "official": true }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Please describe which are the main rights recognized to a data subject by the GDPR in max 250 words.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Right to access.", "official": true },
+      { "text": "Right to data rectification.", "official": true },
+      { "text": "Right to data erasure - right to be forgotten.", "official": true },
+      { "text": "Right to processing restriction.", "official": true },
+      { "text": "Right to data portability.", "official": true },
+      { "text": "Right to limit the processing.", "official": true },
+      { "text": "Right to object to data processing.", "official": true },
+      { "text": "Right to lodge a complaint before the NSA.", "official": true },
+      { "text": "Right to seek legal redress before Courts.", "official": true }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Why is the notion of synthetic data relevant in the field of privacy protection? How would you define synthetic data?",
+    "limit": null,
+    "limitUnit": null,
+    "official": true,
+    "suggestions": [
+      { "text": "Definition: artificially generated data reproducing statistical properties of real datasets without referring to identifiable individuals; academic definition (no specific EU legislation yet).", "official": false },
+      { "text": "Relevance to privacy - Robust anonymisation: significantly reduces re-identification risk.", "official": false },
+      { "text": "Relevance to privacy - Data sharing and collaboration: share datasets without exposing real personal data.", "official": false },
+      { "text": "Relevance to privacy - Data scarcity: reliable alternative for ML training when real data is limited or sensitive.", "official": false },
+      { "text": "Relationship to GDPR: generally falls outside scope because it does not relate to identifiable individuals.", "official": false },
+      { "text": "Distinctions: vs. anonymised data (loses detail, less useful for algorithms); vs. pseudonymised data (remains personal data under GDPR).", "official": false }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Please describe how the right to privacy evolved into the right to personal data protection in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Privacy as originally conceived: negative, liberty-based right against intrusion (UDHR Art. 12, 1948; ECHR Art. 8, 1950; ICCPR, 1966).", "official": false },
+      { "text": "Limitation: insufficient for the era of large-scale data processing (systematic collection, storage, and use of personal information).", "official": false },
+      { "text": "Emergence - OECD Privacy Guidelines (1980): first universal principles for data processing.", "official": false },
+      { "text": "Emergence - Convention 108 (CoE, 1981): first binding international instrument on data protection.", "official": false },
+      { "text": "EU: autonomous fundamental right under Art. 8 CFR (binding 2009) and Art. 16 TFEU.", "official": false },
+      { "text": "Conceptual shift: liberty-based -> dignity-based approach (individual control; protection from surveillance, profiling, manipulation).", "official": false }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Please describe a Data Protection Impact Assessment and its aims in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "What it is: preventive procedural tool under Art. 35 GDPR.", "official": false },
+      { "text": "When mandatory: processing likely to cause high risk to rights and freedoms (e.g., large-scale sensitive data, systematic monitoring of public spaces, solely automated decisions with significant effects).", "official": false },
+      { "text": "Required content - Systematic description of processing operations and purposes.", "official": false },
+      { "text": "Required content - Necessity and proportionality analysis.", "official": false },
+      { "text": "Required content - Risk assessment identifying risks to data subjects.", "official": false },
+      { "text": "Required content - Mitigation measures (TOMs).", "official": false },
+      { "text": "Underlying principle: embodies GDPR's risk-based approach - proactive identification and addressing of privacy risks before processing begins.", "official": false }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Please describe in no more than 150 words the difference between EU regulations and directives.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Legal basis: Art. 288 TFEU (two main types of binding legislative act).", "official": false },
+      { "text": "Regulation: binding in its entirety; directly applicable in all member states; no national transposition required; uniform, simultaneous application.", "official": false },
+      { "text": "Directive: binding as to the result; member states choose form and method; must transpose before the implementation deadline; after deadline, clear, precise, and unconditional provisions acquire direct effect (individuals may rely on them before national courts).", "official": false },
+      { "text": "Other secondary acts: decisions (binding on those addressed); recommendations and opinions (soft law, non-binding).", "official": false }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Please describe the main subjects involved in personal data processing activities and their rights and obligations according to the GDPR in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Data subject: identified/identifiable natural person; holds enforceable rights (access, rectification, erasure, portability, restriction, objection, complaint, judicial redress).", "official": false },
+      { "text": "Controller: determines purposes and means of processing; primary accountability; TOMs, records of processing activities, DPO where required; concept of joint controllers.", "official": false },
+      { "text": "Processor: processes on behalf and on instructions of controller; Art. 28 contract required; sub-processors; implements TOMs.", "official": false },
+      { "text": "Data Protection Officer (DPO): mandatory when (public authorities; large-scale systematic monitoring; large-scale special categories); advises on compliance; interface with supervisory authorities.", "official": false },
+      { "text": "Supervisory authority: independent national body (Art. 51 GDPR; Art. 8 CFR); handles complaints; monitors GDPR application; cooperates via EDPB.", "official": false }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Please describe in no more than 150 words the legal status of EU regulations.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Source: Art. 288 TFEU (secondary law).", "official": false },
+      { "text": "Binding in entirety: no discretion for member states as to content.", "official": false },
+      { "text": "Directly applicable: enforceable without national transposition; uniform, simultaneous application across all member states.", "official": false },
+      { "text": "Primacy of EU law (Costa v. ENEL, 6/64, 1964): national law incompatible with a regulation must be set aside.", "official": false },
+      { "text": "Hierarchy: below primary law (TEU, TFEU, Charter, general principles) and international agreements; above national law.", "official": false }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Please describe the differences of processing activities involving personal data and sensitive personal data in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": true,
+    "suggestions": [
+      { "text": "Personal data (Art. 4(1) GDPR): six lawful bases in Art. 6 (consent; contract; legal obligation; vital interests; public-interest task; legitimate interests of controller/third party).", "official": false },
+      { "text": "Sensitive data / special categories (Art. 9 GDPR): racial or ethnic origin, political opinions, religious/philosophical beliefs, trade-union membership, genetic/biometric data, health data, sex life/sexual orientation.", "official": false },
+      { "text": "Processing of sensitive data: prohibited in principle; exhaustive list of exceptions (explicit consent; employment/social-security law; vital interests; legal claims; substantial public interest or public health; non-profit activities; research).", "official": false },
+      { "text": "Rationale: higher risk of discrimination and harm.", "official": false },
+      { "text": "Historical origins: Convention 108 (1981); OECD Guidelines (1980).", "official": false }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "Please describe the evolution of [personal] data protection legislation in the EU legal system in no more than 12 lines.",
+    "limit": 12,
+    "limitUnit": "lines",
+    "official": true,
+    "suggestions": [
+      { "text": "Directive 95/46/EC (liability approach).", "official": true },
+      { "text": "Nice Charter, articles 7 and 8.", "official": true },
+      { "text": "Articles 2 and 3 of the TEU.", "official": true },
+      { "text": "Article 16 of the TFEU.", "official": true },
+      { "text": "Article 39 of the TEU.", "official": true },
+      { "text": "Charter of Fundamental Rights, articles 7 and 8.", "official": true },
+      { "text": "Shift to a compliance approach -> GDPR.", "official": true },
+      { "text": "Data Protection Package.", "official": true },
+      { "text": "Reference to CoE (i.e. case-law).", "official": true },
+      { "text": "Possible references to other EU directives and regulations.", "official": true }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Please describe the development of EU secondary law (from directives to regulations) of personal data and the reasons underlying said development in no more than 15 lines.",
+    "limit": 15,
+    "limitUnit": "lines",
+    "official": true,
+    "suggestions": [
+      { "text": "Directive 95/46.", "official": true },
+      { "text": "GDPR 2016/679.", "official": true },
+      { "text": "Regulation 2018/1725.", "official": true },
+      { "text": "Directive 2016/680 (on prevention, investigation, detection, prosecution of criminal offences).", "official": true },
+      { "text": "EU Data Protection Package.", "official": true },
+      { "text": "Using directives shifted to the use of regulations to ensure a compliance-oriented approach.", "official": true },
+      { "text": "More harmonization within the EU (reason for the shift from directives to regulations).", "official": true }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Please describe the risk-based framework of the AI Act (Regulation 2024/1689) and its risk tiers in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Source: AI Act = Regulation 2024/1689; first comprehensive, risk-based regulation of AI.", "official": false },
+      { "text": "Rationale: a harmonised EU framework is needed to (i) avoid fragmentation of the single market, (ii) ensure a level playing field and fair competition, (iii) build trust to encourage adoption.", "official": false },
+      { "text": "Four risk tiers - Minimal risk (e.g. spam filters): no obligations.", "official": false },
+      { "text": "Four risk tiers - Limited risk (e.g. chatbots): transparency duties.", "official": false },
+      { "text": "Four risk tiers - High risk (e.g. recruitment, medical devices): strict requirements.", "official": false },
+      { "text": "Four risk tiers - Unacceptable risk (e.g. government social scoring): prohibited.", "official": false },
+      { "text": "Logic: obligations scale with the level of risk posed.", "official": false }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Please describe the practices prohibited under Article 5 of the AI Act in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Source: Art. 5 AI Act - unacceptable-risk practices, prohibited outright.", "official": false },
+      { "text": "Subliminal techniques: manipulation via hidden triggers causing harmful decisions.", "official": false },
+      { "text": "Exploiting vulnerabilities of age, disability, social or economic situation.", "official": false },
+      { "text": "Social scoring: ranking by behaviour/characteristics (cf. China Social Credit System).", "official": false },
+      { "text": "Predictive policing based solely on profiling/personality traits (exception: supporting human assessment based on objective facts).", "official": false },
+      { "text": "Untargeted facial scraping to build face databases from internet/CCTV.", "official": false },
+      { "text": "Emotion inference in the workplace or education institutions.", "official": false },
+      { "text": "Biometric categorisation to deduce sensitive traits (race, political opinions, trade-union membership, religion, sex life/orientation).", "official": false },
+      { "text": "Real-time remote biometric identification in public spaces for law enforcement - with narrow exceptions (search for abduction/trafficking/missing victims; imminent threat/terrorist attack; locating a suspect of an Annex II offence punishable by >= 4 years).", "official": false },
+      { "text": "Recitals 15-16: identification excludes mere verification/authentication; categorisation excludes ancillary commercial features.", "official": false }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "Please describe how high-risk AI systems are classified and the main requirements imposed on them in max 250 words.",
+    "limit": 250,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Two routes to high-risk (Art. 6) - Route 1 (product safety): the AI is a safety component of, or is, a product covered by Annex I harmonisation legislation requiring third-party conformity assessment.", "official": false },
+      { "text": "Two routes to high-risk (Art. 6) - Route 2 (use case): the AI falls under an Annex III use case (biometrics; critical infrastructure; education; employment; essential services incl. credit scoring; law enforcement; migration & borders; justice & democracy).", "official": false },
+      { "text": "Derogation (Art. 6): not high-risk if it performs only a narrow procedural task, improves a prior human activity, detects deviations without replacing human assessment, or is preparatory - but always high-risk if it profiles natural persons.", "official": false },
+      { "text": "Requirements (Art. 9-15), verified via conformity assessment by a notified body: risk management system (9); data governance & bias mitigation (10); technical documentation (11); record-keeping/logging (12); transparency to users (13); human oversight (14); accuracy, robustness, cybersecurity (15).", "official": false },
+      { "text": "Summarised provider obligations: transparency, fairness (no discrimination), accountability.", "official": false }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "Please describe Convention 108 and Convention 108+ and their role in data protection in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Council of Europe instruments (a legal order separate from the EU); enforcement cannot be judged by the ECtHR (its jurisdiction is limited to the ECHR).", "official": false },
+      { "text": "Convention 108 (28 January 1981, \"Data Privacy Day\"): protection of individuals w.r.t. automated processing of personal data; first binding international instrument on data protection (binding on contracting states); open to signature beyond the CoE.", "official": false },
+      { "text": "Content of 108: recalls the OECD principles; covers public and private sectors; basis for transborder data flows and police/enforcement processing; source of the GDPR accountability principle.", "official": false },
+      { "text": "Convention 108+ (18 May 2018): modernisation by the contracting states; standards evolve with technology.", "official": false },
+      { "text": "Significance: adopted days before GDPR application (25 May 2018) - the two orders aligned (transborder flows, fair & lawful collection, purpose limitation, storage duration, data quality, sensitive data, right to know & rectify).", "official": false }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "Please describe the OECD Privacy Guidelines (1980) and their influence on data protection law in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Adopted 1980 (Paris); OECD = Organisation for Economic Cooperation and Development; soft law (not enforceable before a court).", "official": false },
+      { "text": "First international instrument to set principles for processing personal data; universal standards balancing data-subject rights against controllers' needs.", "official": false },
+      { "text": "Eight principles: collection limitation; data quality; purpose specification; use limitation; security safeguards; openness; individual participation; accountability.", "official": false },
+      { "text": "Influence: ancestors of the GDPR principles; recalled by Convention 108 (1981).", "official": false }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "Please describe the protection of privacy under Article 8 ECHR and the role of the European Court of Human Rights in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "ECHR = Council of Europe instrument (completed 1950); sets out rights, procedures and institutions, including the European Court of Human Rights (ECtHR), Strasbourg.", "official": false },
+      { "text": "CoE is a separate legal order from the EU (46 member states; Russia expelled); the ECtHR is competent only over the ECHR.", "official": false },
+      { "text": "Art. 8: right to respect for private and family life; no interference by a public authority except as provided by law and necessary in a democratic society (national security, public safety, prevention of crime, protection of health/rights of others).", "official": false },
+      { "text": "Role of the ECtHR: applies Art. 8 even recently to rule on privacy and on unlawful processing of personal data.", "official": false },
+      { "text": "Placement: 1950 - an early, negative/liberty-based privacy instrument predating dedicated data-protection law.", "official": false }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "Please distinguish the European Union, the Council of Europe, and the OECD as legal systems relevant to data protection in no more than 200 words.",
+    "limit": 200,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Three distinct legal orders relevant to data protection.", "official": false },
+      { "text": "EU: supranational \"new legal order\"; binding hard law with sanctions; primary + secondary law (GDPR, Art. 16 TFEU, Art. 7/8 CFR).", "official": false },
+      { "text": "Council of Europe (CoE): 46 member states; upholds human rights, democracy, rule of law; runs the ECHR + ECtHR (Strasbourg) and Convention 108/108+; binding instruments; relevant to the right to privacy. Separate from the EU.", "official": false },
+      { "text": "OECD: Organisation for Economic Cooperation and Development; produces soft law (Privacy Guidelines 1980); not enforceable before a court; sets influential principles.", "official": false },
+      { "text": "Key contrast: EU and CoE expressly provide sanctions for states (hard law); OECD/UN instruments are largely soft law (morally/politically binding only).", "official": false }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "Please describe the ePrivacy Directive (2002/58/EC) and its scope in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Source: Directive 2002/58/EC; regulates personal data and data in general in the electronic communications sector; still in force; a directive - needs transposition per member state.", "official": false },
+      { "text": "Coverage: confidentiality of communications, cookies, unsolicited marketing, breach notification.", "official": false },
+      { "text": "Key definitions: user/subscriber; traffic data; location data; communication.", "official": false },
+      { "text": "Obligations: providers must take technical/organisational security measures; member states must ensure confidentiality of communications and traffic data.", "official": false },
+      { "text": "Unsolicited communications/automated calls require prior consent; subscribers may object freely; directories need consent.", "official": false },
+      { "text": "Relationship: complemented by the European Electronic Communications Code (Dir. 2018/1972) for non-personal/general data.", "official": false }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Please describe the Law Enforcement Directive (2016/680) and why a separate instrument was adopted in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Source: Directive (EU) 2016/680; data protection in the police/criminal sector (prevention, investigation, detection, prosecution; execution of penalties). A directive - needs transposition.", "official": false },
+      { "text": "Adopted June 2016; replaced Framework Decision 2008/977/JHA.", "official": false },
+      { "text": "Why separate: the GDPR does not cover law-enforcement processing; a dedicated regime balances data protection against policing needs and facilitates cross-border exchange.", "official": false },
+      { "text": "Key features: data protection by design/default for police; breach notification to supervisory authorities; mandatory DPOs; automated decisions must not rely on sensitive data nor discriminate.", "official": false },
+      { "text": "Context: the Data Retention Directive 2006/24/EC was struck down in Digital Rights Ireland.", "official": false }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Please describe data protection by design and by default (Article 25 GDPR) in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Source: Art. 25 GDPR.", "official": false },
+      { "text": "By design (proactive): the controller must, both at the time of determining the means and at the time of processing, implement appropriate TOMs (e.g. pseudonymisation) to implement data-protection principles (e.g. data minimisation) and integrate the necessary safeguards to meet GDPR requirements and protect data subjects' rights.", "official": false },
+      { "text": "By default: the controller must ensure that, by default, only personal data necessary for each specific purpose are processed - covering the amount collected, the extent of processing, the storage period and accessibility; by default data must not be made accessible to an indefinite number of persons without the individual's intervention.", "official": false },
+      { "text": "Underlying logic: embeds GDPR principles (minimisation, security) into systems from the outset.", "official": false }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Please describe the hierarchy of the sources of EU law in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Principle: higher sources cannot be contradicted by lower ones (\"reversed pyramid\"), with limited exceptions.", "official": false },
+      { "text": "Order: primary law > international agreements > secondary law > supplementary law.", "official": false },
+      { "text": "Primary law (top): treaties (TEU, TFEU), Charter of Fundamental Rights, general principles developed by the Court of Justice; cannot be contradicted by lower sources.", "official": false },
+      { "text": "International agreements: concluded by the EU (Art. 216-218 TFEU); bind the EU and member states.", "official": false },
+      { "text": "Secondary law: regulations, directives, decisions, recommendations/opinions (Art. 288 TFEU).", "official": false },
+      { "text": "Supplementary law: CJEU case law + general principles.", "official": false }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Please summarise the Van Gend en Loos case (26/62, 1963) and the principle it established in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Facts: a Dutch transport firm imported a chemical from West Germany and was charged a customs duty it believed breached the Treaty of Rome (which aimed to abolish such duties).", "official": false },
+      { "text": "Forum: sued before the Dutch first-instance customs court, which referred the question to the ECJ via preliminary ruling.", "official": false },
+      { "text": "Ruling: the EU created a new legal order whose law is an integral part of member states' systems and has direct effect - individuals may invoke Treaty provisions before national courts.", "official": false },
+      { "text": "Principle/consequence: foundation of the doctrine of direct effect; citizens (not only states) can enforce EU law nationally.", "official": false }
+    ]
+  },
+  {
+    "id": 31,
+    "text": "Please summarise the Costa v. ENEL case (6/64, 1964) and the principle it established in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Facts: Italy nationalised electricity (creating ENEL); Mr Costa, an Edisonvolta shareholder, refused to pay his electricity bill, claiming the nationalisation breached the Treaty of Rome and the Italian Constitution.", "official": false },
+      { "text": "Forum: parallel suits before a Milan justice of the peace - one referred to the Italian Constitutional Court, one to the ECJ.", "official": false },
+      { "text": "Ruling: the Community is a New Legal Order for which states permanently limited their sovereign rights; Costa lacked standing to block the nationalisation but could raise EU-law incompatibility before his national court.", "official": false },
+      { "text": "Principle: primacy of EU law over conflicting national law.", "official": false }
+    ]
+  },
+  {
+    "id": 32,
+    "text": "Please summarise the Schrems v. Facebook case (2015) and its consequences for transatlantic data transfers in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Facts: activist Max Schrems complained that Facebook (EU-subject, US-based) transferred EU users' personal data to the US, where post-Snowden mass surveillance gave no adequate protection - breaching the fundamental right to data protection.", "official": false },
+      { "text": "Forum: complaint to the Irish data-protection authority, then referred to the ECJ.", "official": false },
+      { "text": "Ruling: the ECJ declared the EU-US Safe Harbor agreement void for failing to ensure protection equivalent to the EU's.", "official": false },
+      { "text": "Consequences: transatlantic transfers had to be re-grounded; a new agreement with improved standards followed (US protection levels raised).", "official": false }
+    ]
+  },
+  {
+    "id": 33,
+    "text": "Please summarise the Google Spain - Costeja Gonzalez case (C-131/12, 2014) and the \"right to be forgotten\" it established in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Facts: Mario Costeja Gonzalez found that Google searches on his name still linked to old newspaper articles about a resolved debt, damaging his reputation without present public interest.", "official": false },
+      { "text": "Forum: complaint to the Spanish data-protection authority against Google Spain; referred to the ECJ.", "official": false },
+      { "text": "Ruling (2014): search engines are controllers; established the Right to be Forgotten - individuals may request de-listing of outdated/irrelevant personal information lacking public interest (cf. Art. 17 GDPR, right to erasure).", "official": false },
+      { "text": "Consequences: de-listing right exercisable EU-wide; requires a proportionality balance between privacy and the public's right to information.", "official": false }
+    ]
+  },
+  {
+    "id": 34,
+    "text": "Please summarise the Digital Rights Ireland case (C-293/12 + C-594/12) and its consequences for mass data retention in no more than 150 words.",
+    "limit": 150,
+    "limitUnit": "words",
+    "official": false,
+    "suggestions": [
+      { "text": "Facts: the Data Retention Directive (2006/24/EC) obliged providers to retain traffic/location data en masse for law enforcement - challenged as a disproportionate interference with privacy and data protection.", "official": false },
+      { "text": "Forum: references from the Irish High Court and the Austrian Constitutional Court to the ECJ.", "official": false },
+      { "text": "Ruling: the directive was declared invalid for failing the proportionality and necessity tests (blanket, untargeted retention).", "official": false },
+      { "text": "Consequences: mass data-retention regimes lost their EU legal basis; reaffirmed proportionality as the limit on surveillance measures (cf. the proportionality scrutiny: legitimate goal -> rational connection -> necessity -> proportionality stricto sensu).", "official": false }
+    ]
+  }
+]

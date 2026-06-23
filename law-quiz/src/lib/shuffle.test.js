@@ -33,7 +33,7 @@ describe('buildRun', () => {
   ];
 
   it('returns the same number of questions, preserving correct flags', () => {
-    const run = buildRun(questions, seededRng([0]));
+    const run = buildRun(questions, Infinity, seededRng([0]));
     expect(run).toHaveLength(2);
     const ids = run.map((q) => q.id).sort();
     expect(ids).toEqual([1, 2]);
@@ -44,7 +44,7 @@ describe('buildRun', () => {
 
   it('does not mutate the source questions', () => {
     const snapshot = JSON.stringify(questions);
-    buildRun(questions, seededRng([0.3, 0.7]));
+    buildRun(questions, Infinity, seededRng([0.3, 0.7]));
     expect(JSON.stringify(questions)).toBe(snapshot);
   });
 });
